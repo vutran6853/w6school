@@ -1,4 +1,4 @@
-# demo_game
+# w4school
 
 ## Project setup
 ```
