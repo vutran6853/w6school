@@ -114,5 +114,6 @@ export default store
 export {
   getter,
   action,
-  type
+  type,
+  IStoreState
 }

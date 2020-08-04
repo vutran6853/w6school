@@ -11,16 +11,14 @@ import Vue from 'vue'
 import Navbar from './components/navbar/Navbar.vue'
 import NavbarItems from './components/navbarItems/NavbarItems.vue'
 
-const App = Vue.extend({
+export default {
   name: 'App',
   components: {
     Navbar,
     NavbarItems
-  },
-  
-})
+  }
+}
 
-export default App
 </script>
 
 <style>
