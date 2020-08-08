@@ -4,6 +4,8 @@ import Main from '../components/main/Main.vue'
 import HtmlHome from '../components/htmlC/HtmlHome.vue'
 import HtmlIntroduction from '../components/htmlC/HtmlIntroduction.vue'
 import HtmlBasic from '../components/htmlC/HtmlBasic.vue'
+import HtmlElements from '../components/htmlC/HtmlElements.vue'
+
 // import HtmlEditors from '../components/htmlC/HtmlEditors.vue'
 import HtmlHomeContent from '../components/htmlC/HtmlHomeContent.vue'
 import HTMLTryIt from '../components/htmlC/HTMLTryIt.vue'
@@ -24,7 +26,9 @@ Vue.use(VueRouter)
       { path: '/html', component: HtmlHomeContent },
       { path: '/html/introduction', component: HtmlIntroduction },
       // { path: '/html/editors', component: HtmlEditors },
-      { path: '/html/basic', component: HtmlBasic }
+      { path: '/html/basic', component: HtmlBasic },
+      { path: '/html/elements', component: HtmlElements }
+
     ]
   },
   {

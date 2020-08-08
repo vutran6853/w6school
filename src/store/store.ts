@@ -1,5 +1,5 @@
 import Vue from 'vue'
-import Vuex, { ActionTree, MutationTree, GetterTree } from 'vuex'
+import Vuex, { Store as VuexStore, ActionTree, MutationTree, GetterTree, CommitOptions, DispatchOptions } from 'vuex'
 
 Vue.use(Vuex)
 
@@ -117,3 +117,5 @@ export {
   type,
   IStoreState
 }
+
+export type Store = Omit<VuexStore<IStoreState>, 'getters' | 'commit' | 'dispatch'>

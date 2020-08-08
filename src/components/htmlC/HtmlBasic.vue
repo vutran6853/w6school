@@ -40,64 +40,7 @@
         </p>
       </div>
 
-      <div class="code-example-container h-21">
-        <p>Example</p>
-        <div class="code-example-inner-container h-13">
-          <div>
-            <span class="tagcolor">&lt;</span>
-            <span class="color-brown">!DOCTYPE </span>
-            <span class="color-red">html</span>
-            <span class="tagcolor">></span>
-
-            <br />
-            
-            <span class="tagcolor">&lt;</span>
-            <span class="color-red">html</span>
-            <span class="tagcolor">></span>
-
-            <br />
-            
-            <span class="tagcolor">&lt;</span>
-            <span class="color-red">body</span>
-            <span class="tagcolor">></span>
-          </div>
-
-          <div>
-            <span class="tagcolor">&lt;</span>
-            <span class="color-red">h1</span>
-            <span class="tagcolor">></span>
-            <span>This is a heading</span>
-            <span class="tagcolor">&lt;</span>
-            <span class="color-red">/h1</span>
-            <span class="tagcolor">></span>
-
-            <br />
-            
-            <span class="tagcolor">&lt;</span>
-            <span class="color-red">p</span>
-            <span class="tagcolor">></span>
-            <span>This is a paragraph.</span>
-            <span class="tagcolor">&lt;</span>
-            <span class="color-red">/p</span>
-            <span class="tagcolor">></span>
-          </div>
-          
-          <div>
-            <span class="tagcolor">&lt;</span>
-            <span class="color-red">/body</span>
-            <span class="tagcolor">></span>
-
-            <br />
-
-            <span class="tagcolor">&lt;</span>
-            <span class="color-red">/html</span>
-            <span class="tagcolor">></span>
-          </div>
-
-        </div>
-        <!-- <button class="w4-button" v-on:click='handleRouteToTryIt'>Try it Yourself</button> -->
-        <button class="w4-button disabled">Try it Yourself</button>
-      </div>
+      <DocumentsUI h1Text='This is a heading' pText='This is a paragraph.' />
 
       <hr/>
 
@@ -233,16 +176,16 @@
         <p>Example</p>
         <div class="code-example-inner-container h-2">
           <div class="code-example-inner-mini-container h-2">
-            <span class="tagcolor">&lt;</span>
+            <span class="color-mediumblue">&lt;</span>
             <span class="color-brown mr-0-5">a</span>
             <span class="color-red">href</span>
             <span class="color-black">=</span>
             <span class="color-mediumblue">"https://www.w4schools.com"</span>
-            <span class="tagcolor">></span>
+            <span class="color-mediumblue">></span>
             <span>This is a link</span>
-            <span class="tagcolor">&lt;</span>
+            <span class="color-mediumblue">&lt;</span>
             <span class="color-brown">/a</span>
-            <span class="tagcolor">></span>
+            <span class="color-mediumblue">></span>
           </div>
         </div>
         <!-- <button class="w4-button" v-on:click='handleRouteToTryIt'>Try it Yourself</button> -->
@@ -269,7 +212,7 @@
         <p>Example</p>
         <div class="code-example-inner-container item-center h-2">
           <div class="code-example-inner-mini-container h-2">
-            <span class="tagcolor">&lt;</span>
+            <span class="color-mediumblue">&lt;</span>
             <span class="color-brown mr-0-5">img</span>
             <span class="color-red">src</span>
             <span class="color-black">=</span>
@@ -283,7 +226,7 @@
             <span class="color-red">height</span>
             <span class="color-black">=</span>
             <span class="color-mediumblue">"142"</span>
-            <span class="tagcolor">&gt;</span>
+            <span class="color-mediumblue">&gt;</span>
           </div>
         </div>
         <!-- <button class="w4-button" v-on:click='handleRouteToTryIt'>Try it Yourself</button> -->
@@ -305,7 +248,7 @@
           <p class="text-size-1-2">Inspect an HTML Element:</p>
           <p>Right-click on an element (or a blank area), and choose "Inspect" or "Inspect Element" to see what elements are made up of (you will see both the HTML and the CSS). You can also edit the HTML or CSS on-the-fly in the Elements or Styles panel that opens.</p>
         </div>
-        <div class="group-button-container">
+        <div class="group-button-container w-100">
           <button class="w4-btn" v-on:click='handleRouteTo("/html/introduction")'>&lt;Previous</button>
           <button class="w4-btn" v-on:click='handleRouteTo("/html/basic")'>Next ></button>  
         </div>
@@ -323,6 +266,7 @@
 
 <script lang="ts">
 import Vue from 'vue'
+import DocumentsUI from './shareUI/DocumentsUI.vue'
 
 const HtmlBasic = Vue.extend({
   name: 'HtmlBasic',
@@ -332,6 +276,9 @@ const HtmlBasic = Vue.extend({
        
       }
     }
+  },
+  components: {
+    DocumentsUI
   },
   methods: {
     handleRouteTo(urlPath: string) {
@@ -363,17 +310,4 @@ export default HtmlBasic
   flex-direction: column;
   justify-content: space-between;
 }
-
-.code-example-container {
-  background-color: #f1f1f1;
-  font-size: 1.5rem;
-  padding: 1rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  margin-bottom: 1rem;
-}
-
-
-
 </style>

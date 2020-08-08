@@ -444,25 +444,6 @@ export default HtmlHomeContent
 
 
 
-.tagcolor {
-  color: mediumblue;
-}
-
-.color-mediumblue {
-  color: mediumblue;
-}
-
-.color-red {
-  color: red;
-}
-
-.color-black {
-  color: black;
-}
-
-.color-brown {
-  color: brown;
-}
 
 
 

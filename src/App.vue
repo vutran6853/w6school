@@ -73,6 +73,9 @@ export default {
 .h-25 {
   height: 25rem;
 }
+.h-35 {
+  height: 35rem;
+}
 
 .w-90 {
   width: 90%;
@@ -87,6 +90,10 @@ export default {
 }
 .text-size-2 {
   font-size: 2rem;
+}
+
+.text-bold {
+  font-weight: bold;
 }
 
 .d-flex-column {

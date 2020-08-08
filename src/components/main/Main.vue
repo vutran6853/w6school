@@ -352,6 +352,7 @@ const Main = Vue.extend({
     NavbarItems
   },
   created() {
+    this.$store.state
     this.$store.dispatch(action.setNavbarItemsToDefault)
   },
   methods: {
@@ -443,26 +444,6 @@ export default Main
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-}
-
-.tagcolor {
-  color: mediumblue;
-}
-
-.color-mediumblue {
-  color: mediumblue;
-}
-
-.color-red {
-  color: red;
-}
-
-.color-black {
-  color: black;
-}
-
-.color-brown {
-  color: brown;
 }
 
 .code-example-html-example-container {

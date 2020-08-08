@@ -136,70 +136,7 @@
 
       <hr/>
 
-      <div class="d-flex-column h-25">
-        <p class="text-size-2">What is an HTML Element?</p>
-        <p style="">An HTML element is defined by a start tag, some content, and an end tag:</p>
-        <div>
-          <span class="">&lt;</span>
-          <span class="">tagname</span>
-          <span class="">&gt;</span>
-          <span>Content goes here...</span>
-          <span class="">&lt;</span>
-          <span class="">/tagname</span>
-          <span class="">&gt;</span>
-        </div>
-        <p style="">The HTML <strong>element</strong> is everything from the start tag to the end tag:</p>
-        <div>
-          <span class="">&lt;</span>
-          <span class="">h1</span>
-          <span class="">&gt;</span>
-          <span>My First Heading</span>
-          <span class="">&lt;</span>
-          <span class="">/h1</span>
-          <span class="">&gt;</span>
-        </div>
-        <div>
-          <span class="">&lt;</span>
-          <span class="">p</span>
-          <span class="">&gt;</span>
-          <span>My first paragraph.</span>
-          <span class="">&lt;</span>
-          <span class="">/p</span>
-          <span class="">&gt;</span>
-        </div>
-
-        <table class="htmlIntroduction-table-container">
-          <tbody>
-            <tr>
-              <th>Start tag</th>
-              <th>Element content</th>
-              <th>End tag</th>
-            </tr>
-            <tr>
-              <th>&lt;h1&gt;</th>
-              <th>My First Heading</th>
-              <th>&lt;/h1&gt;</th>
-            </tr>
-            <tr>
-              <th>&lt;p&gt;</th>
-              <th>Element content</th>
-              <th>&lt;/p&gt;</th>
-            </tr>
-            <tr>
-              <th>&lt;br&gt;</th>
-              <th>My first paragraph.</th>
-              <th>&lt;/br&gt;</th>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-
-      <div class="htmlIntroduction-note-container">
-        <p>
-          <strong>Note:</strong>
-          Some HTML elements have no content (like the &lt;br&gt; element). These elements are called empty elements. Empty elements do not have an end tag!
-        </p>
-      </div>
+      <ElementUI title='What is an HTML Element?'  />
 
       <hr/>
 
@@ -327,6 +264,7 @@
 
 <script lang="ts">
 import Vue from 'vue'
+import ElementUI from './shareUI/ElementUI.vue'
 
 const HtmlIntroduction = Vue.extend({
   name: 'HtmlIntroduction',
@@ -335,6 +273,9 @@ const HtmlIntroduction = Vue.extend({
       state: {
       }
     }
+  },
+  components: {
+    ElementUI
   },
 
   methods: {
@@ -400,44 +341,6 @@ export default HtmlIntroduction
   background-color: #f1f1f1;
 }
 
-.htmlIntroduction-table-container {
-  display: flex;
-  width: 100%;
-  height: 10rem;
-  border-top: 1px solid  #ddd;
-  border-right: 1px solid  #ddd;
-  border-left: 1px solid  #ddd;
-
-}
-.htmlIntroduction-table-container > tbody {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  justify-content: space-between;
-  /* padding: 0.5rem; */
-}
-
-.htmlIntroduction-table-container > tbody > tr {
-  display: flex;
-  flex-direction: row;
-  width: 100%;
-  border-bottom: 1px solid #ddd;
-  height: 40px;
-  justify-content: space-around;
-  align-items: center;
-}
-
-.htmlIntroduction-table-container > tbody > tr:nth-child(even) {
-  background-color: #f1f1f1;
-}
-.htmlIntroduction-note-container {
-  height: 4rem;
-  background-color: #ffffcc;
-  display: flex;
-  padding: 1rem;
-  align-items: center;
-  margin-bottom: 1rem;
-}
 
 .htmlIntroduction-page-structure-container {
   display: flex;
@@ -696,7 +599,7 @@ export default HtmlIntroduction
 .code-section-example-container {
   height: 30rem;
   /* border: 1px solid gainsboro; */
-  border-left: 3px solid gainsboro;
+  border-left: 3px solid #dcdcdc;
   display: grid;
   grid-template-columns: 1fr 1fr;
   /* display: flex; */
@@ -734,25 +637,7 @@ export default HtmlIntroduction
 
 
 
-.tagcolor {
-  color: mediumblue;
-}
 
-.color-mediumblue {
-  color: mediumblue;
-}
-
-.color-red {
-  color: red;
-}
-
-.color-black {
-  color: black;
-}
-
-.color-brown {
-  color: brown;
-}
 
 
 
