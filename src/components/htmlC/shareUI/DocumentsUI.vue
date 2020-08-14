@@ -54,8 +54,8 @@
       </div>
 
     </div>
-    <!-- <button class="w4-button" v-on:click='handleRouteToTryIt'>Try it Yourself</button> -->
-    <button class="w4-button disabled">Try it Yourself</button>
+    <!-- <button class="w6-button" v-on:click='handleRouteToTryIt'>Try it Yourself</button> -->
+    <button class="w6-button disabled">Try it Yourself</button>
   </div>
 </template>
 

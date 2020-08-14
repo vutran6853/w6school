@@ -1,7 +1,7 @@
 <template>
   <nav id="navbar-container">
     <ul>
-      <li v-on:click='handleRouteToHome'>w4schools.com</li>
+      <li v-on:click='handleRouteToHome'>w6schools.com</li>
       <li>THE WORLD'S LARGEST WEB DEVELOPER SITE</li>
     </ul>
   </nav>

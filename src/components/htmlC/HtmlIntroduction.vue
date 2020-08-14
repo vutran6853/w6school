@@ -3,8 +3,8 @@
     <div class="htmlIntroduction-inner-item-a">
       <p>HTML Introduction</p>
       <div class="group-button-container">
-        <button class="w4-btn" v-on:click='handleRouteTo("/html")'>&lt;Previous</button>
-        <button class="w4-btn" v-on:click='handleRouteTo("/html/basic")'>Next ></button>  
+        <button class="w6-btn" v-on:click='handleRouteTo("/html")'>&lt;Previous</button>
+        <button class="w6-btn" v-on:click='handleRouteTo("/html/basic")'>Next ></button>  
       </div>
     </div>
 
@@ -114,20 +114,20 @@
 
         </div>
 
-        <button class="w4-button disabled" v-on:click='handleRouteToTryIt'>Try it Yourself</button>
+        <button class="w6-button disabled" v-on:click='handleRouteToTryIt'>Try it Yourself</button>
 
       </div>
 
       <div class="htmlIntroduction-info-inner-example-item-b">
         <p class="text-size-1-2">Example Explained</p>
         <ul>
-          <li>The <span class="w4-codespan">&lt;!DOCTYPE html&gt;</span> declaration defines that this document is an HTML5 document</li>
-          <li>The <span class="w4-codespan">&lt;html&gt;</span> element is the root element of an HTML page</li>
-          <li>The <span class="w4-codespan">&lt;head&gt;</span> element contains meta information about the HTML page</li>
-          <li>The <span class="w4-codespan">&lt;title&gt;</span> element specifies a title for the HTML page (which is shown in the browser's title bar or in the page's tab)</li>
-          <li>The <span class="w4-codespan">&lt;body&gt;</span> element defines the document's body, and is a container for all the visible contents, such as headings, paragraphs, images, hyperlinks, tables, lists, etc.</li>
-          <li>The <span class="w4-codespan">&lt;h1&gt;</span> element defines a large heading</li>
-          <li>The <span class="w4-codespan">&lt;p&gt;</span> element defines a paragraph</li>
+          <li>The <span class="w6-codespan">&lt;!DOCTYPE html&gt;</span> declaration defines that this document is an HTML5 document</li>
+          <li>The <span class="w6-codespan">&lt;html&gt;</span> element is the root element of an HTML page</li>
+          <li>The <span class="w6-codespan">&lt;head&gt;</span> element contains meta information about the HTML page</li>
+          <li>The <span class="w6-codespan">&lt;title&gt;</span> element specifies a title for the HTML page (which is shown in the browser's title bar or in the page's tab)</li>
+          <li>The <span class="w6-codespan">&lt;body&gt;</span> element defines the document's body, and is a container for all the visible contents, such as headings, paragraphs, images, hyperlinks, tables, lists, etc.</li>
+          <li>The <span class="w6-codespan">&lt;h1&gt;</span> element defines a large heading</li>
+          <li>The <span class="w6-codespan">&lt;p&gt;</span> element defines a paragraph</li>
         </ul>
       </div>
     </div>
@@ -259,8 +259,8 @@
     </div> -->
 
     <div class="group-button-container container">
-      <button class="w4-btn" v-on:click='handleRouteTo("/html")'>&lt;Previous</button>
-      <button class="w4-btn" v-on:click='handleRouteTo("/html/basic")'>Next ></button>  
+      <button class="w6-btn" v-on:click='handleRouteTo("/html")'>&lt;Previous</button>
+      <button class="w6-btn" v-on:click='handleRouteTo("/html/basic")'>Next ></button>  
     </div>
 
   </section>
@@ -337,7 +337,7 @@ export default HtmlIntroduction
   margin-top: 1rem;
 }
 
-.w4-codespan {
+.w6-codespan {
   color: crimson;
   background-color: #f1f1f1;
 }
@@ -437,7 +437,7 @@ export default HtmlIntroduction
 }
 
 
-.w4-btn {
+.w6-btn {
   height: 45px;
   width: 100px;
   font-size: 1.2rem;
@@ -529,7 +529,7 @@ export default HtmlIntroduction
   width: 97%;
 }
 
-.w4-button-light-blue {
+.w6-button-light-blue {
   height: 40px;
   width: 150px;
   font-size: 1rem;
@@ -562,7 +562,7 @@ export default HtmlIntroduction
   padding-left: 1rem;
 }
 
-.w4-button {
+.w6-button {
   height: 40px;
   width: 150px;
   font-size: 1rem;
@@ -573,11 +573,11 @@ export default HtmlIntroduction
   outline: none;
 }
 
-.w4-button:hover {
+.w6-button:hover {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-.w4-button-grey {
+.w6-button-grey {
   height: 40px;
   width: 10rem;
   font-size: 1rem;
@@ -589,7 +589,7 @@ export default HtmlIntroduction
   margin: 0.5rem;
 }
 
-.w4-button-grey:hover {
+.w6-button-grey:hover {
   background-color: lightgray;
   color: black;
 }

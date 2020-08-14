@@ -261,7 +261,7 @@ export default {
 
 
 
-.w4-btn {
+.w6-btn {
   height: 45px;
   width: 100px;
   font-size: 1.2rem;
@@ -272,7 +272,7 @@ export default {
   outline: none;
 }
 
-.w4-info {
+.w6-info {
   background-color: #d4edda;
   height: 14rem;
   display: flex;
@@ -283,7 +283,7 @@ export default {
   margin-top: 1rem;
 }
 
-.w4-info > button {
+.w6-info > button {
   height: 40px;
   width: 14rem;
   font-size: 1rem;
@@ -324,7 +324,7 @@ export default {
 
 @media only screen and (min-width: 768px) {
   #app {
-    width: 100rem;
+    width: 100%;
   }
 }
 

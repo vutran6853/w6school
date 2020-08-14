@@ -3,9 +3,9 @@
     <div class="title-container">
       <p>HTML Attributes</p>
       <div class="group-button-container">
-        <button class="w4-btn" v-on:click='handleRouteTo("/html/elements")'>&lt;Previous</button>
-        <!-- <button class="w4-btn" v-on:click='handleRouteTo("/html/headings")'>Next ></button> -->
-        <button class="w4-btn disabled">Next></button>  
+        <button class="w6-btn" v-on:click='handleRouteTo("/html/elements")'>&lt;Previous</button>
+        <!-- <button class="w6-btn" v-on:click='handleRouteTo("/html/headings")'>Next ></button> -->
+        <button class="w6-btn disabled">Next></button>  
 
       </div>
     </div>
@@ -37,9 +37,9 @@
         <p class="text-size-2">The href Attribute</p>
         <p>
           The 
-          <span class="w4-codespan">&lt;a&gt;</span>
+          <span class="w6-codespan">&lt;a&gt;</span>
           tag defines a hyperlink. The
-          <span class="w4-codespan">&lt;href&gt;</span>
+          <span class="w6-codespan">&lt;href&gt;</span>
           attribute specifies the URL of the page the link goes to:
         </p>
       </div>
@@ -51,16 +51,16 @@
             <span class="color-brown mr-0-5">a</span>
             <span class="color-red">href</span>
             <span class="color-black">=</span>
-            <span class="color-mediumblue">"https://www.w4schools.com"</span>
+            <span class="color-mediumblue">"https://www.w6schools.com"</span>
             <span class="color-mediumblue">></span>
-            <span>Visit W4Schools</span>
+            <span>Visit W6Schools</span>
             <span class="color-mediumblue">&lt;</span>
             <span class="color-brown">/a</span>
             <span class="color-mediumblue">></span>
           </div>
         </div>
-        <!-- <button class="w4-button" v-on:click='handleRouteToTryIt'>Try it Yourself</button> -->
-        <button class="w4-button disabled">Try it Yourself</button>
+        <!-- <button class="w6-button" v-on:click='handleRouteToTryIt'>Try it Yourself</button> -->
+        <button class="w6-button disabled">Try it Yourself</button>
       </div>
         <p class="p-1">
           You will learn more about links in our
@@ -76,9 +76,9 @@
         <p class="text-size-2">The src Attribute</p>
         <p>
           The 
-          <span class="w4-codespan">&lt;img&gt;</span>
+          <span class="w6-codespan">&lt;img&gt;</span>
           tag is used to embed an image in an HTML page. The
-          <span class="w4-codespan">&lt;scr&gt;</span>
+          <span class="w6-codespan">&lt;scr&gt;</span>
           attribute specifies the path to the image to be displayed:
         </p>
       </div>
@@ -94,8 +94,8 @@
             <span class="color-mediumblue">></span>
           </div>
         </div>
-        <!-- <button class="w4-button" v-on:click='handleRouteToTryIt'>Try it Yourself</button> -->
-        <button class="w4-button disabled">Try it Yourself</button>
+        <!-- <button class="w6-button" v-on:click='handleRouteToTryIt'>Try it Yourself</button> -->
+        <button class="w6-button disabled">Try it Yourself</button>
       </div>
     </section>
 
@@ -107,11 +107,11 @@
         <p class="text-size-2">The width and height Attributes</p>
         <p>
           The 
-          <span class="w4-codespan">&lt;img&gt;</span>
+          <span class="w6-codespan">&lt;img&gt;</span>
             tag should also contain the
-          <span class="w4-codespan">&lt;width&gt;</span>
+          <span class="w6-codespan">&lt;width&gt;</span>
           and
-          <span class="w4-codespan">&lt;height&gt;</span>
+          <span class="w6-codespan">&lt;height&gt;</span>
           attributes, which specifies the width and height of the image (in pixels):
         </p>
       </div>
@@ -133,8 +133,8 @@
             <span class="color-mediumblue">></span>
           </div>
         </div>
-        <!-- <button class="w4-button" v-on:click='handleRouteToTryIt'>Try it Yourself</button> -->
-        <button class="w4-button disabled">Try it Yourself</button>
+        <!-- <button class="w6-button" v-on:click='handleRouteToTryIt'>Try it Yourself</button> -->
+        <button class="w6-button disabled">Try it Yourself</button>
       </div>
     </section>
     
@@ -146,11 +146,11 @@
         <p class="text-size-2">The alt Attribute</p>
         <p>
           The required 
-          <span class="w4-codespan">&lt;alt&gt;</span>
+          <span class="w6-codespan">&lt;alt&gt;</span>
             attribute for the 
-          <span class="w4-codespan">&lt;img&gt;</span>
+          <span class="w6-codespan">&lt;img&gt;</span>
           tag specifies an alternate text for an image, if the image for some reason cannot be displayed. This can be due to slow connection, or an error in the
-          <span class="w4-codespan">&lt;scr&gt;</span>
+          <span class="w6-codespan">&lt;scr&gt;</span>
           attribute, or if the user uses a screen reader.
         </p>
       </div>
@@ -168,8 +168,8 @@
             <span class="color-mediumblue mr-0-5">"Girl with a jacket"</span>
           </div>
         </div>
-        <!-- <button class="w4-button" v-on:click='handleRouteToTryIt'>Try it Yourself</button> -->
-        <button class="w4-button disabled">Try it Yourself</button>
+        <!-- <button class="w6-button" v-on:click='handleRouteToTryIt'>Try it Yourself</button> -->
+        <button class="w6-button disabled">Try it Yourself</button>
       </div>
         <div class="code-example-container h-10">
         <p>Example</p>
@@ -186,8 +186,8 @@
             <span class="color-mediumblue mr-0-5">"Girl with a jacket"</span>
           </div>
         </div>
-        <!-- <button class="w4-button" v-on:click='handleRouteToTryIt'>Try it Yourself</button> -->
-        <button class="w4-button disabled">Try it Yourself</button>
+        <!-- <button class="w6-button" v-on:click='handleRouteToTryIt'>Try it Yourself</button> -->
+        <button class="w6-button disabled">Try it Yourself</button>
       </div>
         <p class="p-1">
           You will learn more about links in our
@@ -209,7 +209,7 @@
         <p class="text-size-2">The style Attribute</p>
         <p>
           The 
-          <span class="w4-codespan">&lt;style&gt;</span>
+          <span class="w6-codespan">&lt;style&gt;</span>
             attribute is used to add styles to an element, such as color, font, size, and more.
         </p>
       </div>
@@ -229,8 +229,8 @@
             <span class="color-mediumblue">></span>
           </div>
         </div>
-        <!-- <button class="w4-button" v-on:click='handleRouteToTryIt'>Try it Yourself</button> -->
-        <button class="w4-button disabled">Try it Yourself</button>
+        <!-- <button class="w6-button" v-on:click='handleRouteToTryIt'>Try it Yourself</button> -->
+        <button class="w6-button disabled">Try it Yourself</button>
       </div>
         <p class="p-1">
           You will learn more about styles in our
@@ -246,9 +246,9 @@
         <p class="text-size-2">The lang Attribute</p>
         <p>
           You should always include the
-          <span class="w4-codespan">&lt;lang&gt;</span>
+          <span class="w6-codespan">&lt;lang&gt;</span>
             attribute inside the
-          <span class="w4-codespan">&lt;html&gt;</span>
+          <span class="w6-codespan">&lt;html&gt;</span>
           tag, to declare the language of the Web page. This is meant to assist search engines and browsers.
         </p>
         <p>The following example specifies English as the language:</p>
@@ -298,7 +298,7 @@
       <div class="d-flex-column h-5 p-1">
         <p>
           Country codes can also be added to the language code in the
-          <span class="w4-codespan">&lt;lang&gt;</span>
+          <span class="w6-codespan">&lt;lang&gt;</span>
             attribute. So, the first two characters define the language of the HTML page, and the last two characters define the country.
           tag, to declare the language of the Web page. This is meant to assist search engines and browsers.
         </p>
@@ -357,7 +357,7 @@
         <p class="text-size-2">The title Attribute</p>
         <p>
           The 
-          <span class="w4-codespan">&lt;title&gt;</span>
+          <span class="w6-codespan">&lt;title&gt;</span>
             attribute defines some extra information about an element.
         </p>
         <p>The value of the title attribute will be displayed as a tooltip when you mouse over the element:</p>
@@ -378,8 +378,8 @@
             <span class="color-mediumblue">></span>
           </div>
         </div>
-        <!-- <button class="w4-button" v-on:click='handleRouteToTryIt'>Try it Yourself</button> -->
-        <button class="w4-button disabled">Try it Yourself</button>
+        <!-- <button class="w6-button" v-on:click='handleRouteToTryIt'>Try it Yourself</button> -->
+        <button class="w6-button disabled">Try it Yourself</button>
       </div>
     </section>
 
@@ -395,7 +395,7 @@
       <div class="note-container">
           <p>
           <strong>Note:</strong>
-          At W4Schools we always use lowercase attribute names.
+          At W6Schools we always use lowercase attribute names.
         </p>
       </div>
     </section>
@@ -417,7 +417,7 @@
             <span class="color-brown mr-0-5">a</span>
             <span class="color-red">href</span>
             <span class="color-black">=</span>
-            <span class="color-mediumblue">"https://www.w4schools.com/html/"</span>
+            <span class="color-mediumblue">"https://www.w6schools.com/html/"</span>
             <span class="color-mediumblue">></span>
             <span>Visit our HTML tutorial</span>
             <span class="color-mediumblue">&lt;</span>
@@ -434,7 +434,7 @@
             <span class="color-brown mr-0-5">a</span>
             <span class="color-red">href</span>
             <span class="color-black">=</span>
-            <span class="color-mediumblue">https://www.w4schools.com/html/</span>
+            <span class="color-mediumblue">https://www.w6schools.com/html/</span>
             <span class="color-mediumblue">></span>
             <span>Visit our HTML tutorial</span>
             <span class="color-mediumblue">&lt;</span>
@@ -455,18 +455,18 @@
             <span class="color-red">title</span>
             <span class="color-black">=</span>
             <span class="color-mediumblue mr-0-5">About</span>
-            <span class="color-red">W4Schools</span>
+            <span class="color-red">W6Schools</span>
 
             <span class="color-mediumblue">></span>
           </div>
         </div>
-        <!-- <button class="w4-button" v-on:click='handleRouteToTryIt'>Try it Yourself</button> -->
-        <button class="w4-button disabled">Try it Yourself</button>
+        <!-- <button class="w6-button" v-on:click='handleRouteToTryIt'>Try it Yourself</button> -->
+        <button class="w6-button disabled">Try it Yourself</button>
       </div>
       <div class="note-container">
           <p>
           <strong>Note:</strong>
-          At W4Schools we always use lowercase attribute names.
+          At W6Schools we always use lowercase attribute names.
         </p>
       </div>
     </section>
@@ -488,7 +488,7 @@
             <span class="color-red">title</span>
             <span class="color-black">=</span>
             <span class="color-mediumblue mr-0-5">About</span>
-            <span class="color-red">W4Schools</span>
+            <span class="color-red">W6Schools</span>
 
             <span class="color-mediumblue">></span>
           </div>
@@ -505,13 +505,13 @@
             <span class="color-red">title</span>
             <span class="color-black">=</span>
             <span class="color-mediumblue mr-0-5">About</span>
-            <span class="color-red">W4Schools</span>
+            <span class="color-red">W6Schools</span>
 
             <span class="color-mediumblue">></span>
           </div>
         </div>
-        <!-- <button class="w4-button" v-on:click='handleRouteToTryIt'>Try it Yourself</button> -->
-        <button class="w4-button disabled">Try it Yourself</button>
+        <!-- <button class="w6-button" v-on:click='handleRouteToTryIt'>Try it Yourself</button> -->
+        <button class="w6-button disabled">Try it Yourself</button>
       </div>
     </section>
 
@@ -522,13 +522,13 @@
       <p class="text-size-2">Chapter Summary</p>
       <ul title="list">
         <li>All HTML elements can have <strong>attributes</strong></li>
-        <li>The <span class="w4-codespan">href</span> attribute of <span class="w4-codespan">&lt;a&gt;</span>specifies the URL of the page the link goes to</li>
-        <li>The <span class="w4-codespan">scr</span> attribute of <span class="w4-codespan">&lt;img&gt;</span>specifies the path to the image to be displayed</li>
-        <li>The <span class="w4-codespan">width</span> and <span class="w4-codespan">height</span> attributes of <span class="w4-codespan">&lt;img&gt;</span>provide size information for images</li>
-        <li>The <span class="w4-codespan">alt</span> attribute of <span class="w4-codespan">&lt;img&gt;</span>provides an alternate text for an image</li>
-        <li>The <span class="w4-codespan">style</span> attribute is used to add styles to an element, such as color, font, size, and more</li>
-        <li>The <span class="w4-codespan">lang</span> attribute of <span class="w4-codespan">&lt;html&gt;</span>tag declares the language of the Web page</li>
-        <li>The <span class="w4-codespan">title</span> attribute defines some extra information about an element</li>
+        <li>The <span class="w6-codespan">href</span> attribute of <span class="w6-codespan">&lt;a&gt;</span>specifies the URL of the page the link goes to</li>
+        <li>The <span class="w6-codespan">scr</span> attribute of <span class="w6-codespan">&lt;img&gt;</span>specifies the path to the image to be displayed</li>
+        <li>The <span class="w6-codespan">width</span> and <span class="w6-codespan">height</span> attributes of <span class="w6-codespan">&lt;img&gt;</span>provide size information for images</li>
+        <li>The <span class="w6-codespan">alt</span> attribute of <span class="w6-codespan">&lt;img&gt;</span>provides an alternate text for an image</li>
+        <li>The <span class="w6-codespan">style</span> attribute is used to add styles to an element, such as color, font, size, and more</li>
+        <li>The <span class="w6-codespan">lang</span> attribute of <span class="w6-codespan">&lt;html&gt;</span>tag declares the language of the Web page</li>
+        <li>The <span class="w6-codespan">title</span> attribute defines some extra information about an element</li>
       </ul>
     </section>
 
@@ -547,8 +547,8 @@
     </section>
 
     <div class="group-button-container">
-      <button class="w4-btn" v-on:click='handleRouteTo("/html/elements")'>&lt;Previous</button>
-      <button class="w4-btn disabled">Next></button>  
+      <button class="w6-btn" v-on:click='handleRouteTo("/html/elements")'>&lt;Previous</button>
+      <button class="w6-btn disabled">Next></button>  
     </div>
 
   </main>

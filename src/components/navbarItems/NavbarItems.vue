@@ -40,7 +40,7 @@
         <p>Learn HTML</p>
         <p>Learn CSS</p>
         <p>Learn Bootstrap</p>
-        <p>Learn W4.CSS</p>
+        <p>Learn w6.CSS</p>
         <p>Learn Colors</p>
         <p>Learn Icons</p>
         <p>Learn Graphices</p>
@@ -58,7 +58,7 @@
         <p>Learn AngularJS</p>
         <p>Learn JSON</p>
         <p>Learn AJAX</p>
-        <p>Learn W4.JS</p>
+        <p>Learn w6.JS</p>
       </div>
 
 
@@ -93,7 +93,7 @@
         <p>CSS Browser Support</p>
         <p>Bootstrap3 Reference</p>
         <p>Bootstrap4 Reference</p>
-        <p>W4.CSS Reference</p>
+        <p>w6.CSS Reference</p>
         <p>Icon Reference</p>
         <p>Sass Reference</p>
       </div>
@@ -103,7 +103,7 @@
         <p>JavaScript Reference</p>
         <p>HTML DOM Reference</p>
         <p>jQuery Reference</p>
-        <p>W4 .JS Reference</p>
+        <p>w6 .JS Reference</p>
       </div>
 
 

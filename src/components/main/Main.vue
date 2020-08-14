@@ -10,7 +10,7 @@
           <p class="available" v-on:click='handleRouteTo("/html")'>Learn HTML</p>
           <p>Learn CSS</p>
           <p>Learn Bootstrap</p>
-          <p>Learn W4.CSS</p>
+          <p>Learn w6.CSS</p>
           <p>Learn Colors</p>
           <p>Learn Icons</p>
           <p>Learn Graphices</p>
@@ -28,7 +28,7 @@
           <p>Learn AngularJS</p>
           <p>Learn JSON</p>
           <p>Learn AJAX</p>
-          <p>Learn W4.JS</p>
+          <p>Learn w6.JS</p>
         </div>
 
 
@@ -69,8 +69,8 @@
             <h3>HTML</h3>
             <p>The language for building web pages</p>
             <div class="code-section-example-item-left-group-button">
-              <button class="w4-button-grey" v-on:click='handleRouteTo("html")'>LEARN HTML</button>
-              <button class="w4-button-grey disabled">HTML REFERENCE</button>  
+              <button class="w6-button-grey" v-on:click='handleRouteTo("html")'>LEARN HTML</button>
+              <button class="w6-button-grey disabled">HTML REFERENCE</button>  
             </div>
           </div>
 
@@ -146,7 +146,7 @@
 
             </div>
 
-            <button class="w4-button disabled">Try it Yourself</button>
+            <button class="w6-button disabled">Try it Yourself</button>
           </div>
         </section>
 
@@ -156,8 +156,8 @@
             <h3>CSS</h3>
             <p>The language for styling web pages</p>
             <div class="code-section-example-item-left-group-button">
-              <button class="w4-button-grey disabled">LEARN CSS</button>
-              <button class="w4-button-grey disabled">CSS REFERENCE</button>  
+              <button class="w6-button-grey disabled">LEARN CSS</button>
+              <button class="w6-button-grey disabled">CSS REFERENCE</button>  
             </div>
           </div>
 
@@ -220,7 +220,7 @@
 
             </div>
 
-            <button class="w4-button disabled">Try it Yourself</button>
+            <button class="w6-button disabled">Try it Yourself</button>
           </div>
         </section>
 
@@ -230,8 +230,8 @@
             <h3>JavaScript</h3>
             <p>The language for programming web pages</p>
             <div class="code-section-example-item-left-group-button">
-              <button class="w4-button-grey disabled">LEARN JAVASCRIPT</button>
-              <button class="w4-button-grey disabled">JAVASCRIPT REFERENCE</button>  
+              <button class="w6-button-grey disabled">LEARN JAVASCRIPT</button>
+              <button class="w6-button-grey disabled">JAVASCRIPT REFERENCE</button>  
             </div>
           </div>
 
@@ -289,7 +289,7 @@
                   
             </div>
 
-            <button class="w4-button disabled">Try it Yourself</button>
+            <button class="w6-button disabled">Try it Yourself</button>
           </div>
         </section>
 
@@ -299,8 +299,8 @@
             <h3>SQL</h3>
             <p>A language for accessing databases</p>
             <div class="code-section-example-item-left-group-button">
-              <button class="w4-button-grey disabled">LEARN SQL</button>
-              <button class="w4-button-grey disabled">SQL REFERENCE</button>  
+              <button class="w6-button-grey disabled">LEARN SQL</button>
+              <button class="w6-button-grey disabled">SQL REFERENCE</button>  
             </div>
           </div>
 
@@ -329,7 +329,7 @@
 
             </div>
 
-            <button class="w4-button disabled" ref="Nom">Try it Yourself</button>
+            <button class="w6-button disabled" ref="Nom">Try it Yourself</button>
           </div>
         </section>
       </div>
@@ -440,7 +440,7 @@ export default Main
   padding-left: 1rem;
 }
 
-.w4-button {
+.w6-button {
   height: 40px;
   width: 150px;
   font-size: 1rem;
@@ -451,11 +451,11 @@ export default Main
   outline: none;
 }
 
-.w4-button:hover {
+.w6-button:hover {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-.w4-button-grey {
+.w6-button-grey {
   height: 40px;
   width: 10rem;
   font-size: 1rem;
@@ -467,7 +467,7 @@ export default Main
   margin: 0.5rem;
 }
 
-.w4-button-grey:hover {
+.w6-button-grey:hover {
   background-color: lightgray;
   color: black;
 }

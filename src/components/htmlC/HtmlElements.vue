@@ -4,8 +4,8 @@
       <div class="title-container">
         <p>HTML Elements</p>
         <div class="group-button-container">
-          <button class="w4-btn" v-on:click='handleRouteTo("/html/basic")'>&lt;Previous</button>
-          <button class="w4-btn" v-on:click='handleRouteTo("/html/attributes")'>Next ></button>  
+          <button class="w6-btn" v-on:click='handleRouteTo("/html/basic")'>&lt;Previous</button>
+          <button class="w6-btn" v-on:click='handleRouteTo("/html/attributes")'>Next ></button>  
         </div>
       </div>
 
@@ -27,10 +27,10 @@
         <p>All HTML documents consist of nested HTML elements.</p>
         <p>
           The following example contains four HTML elements (
-            <span class="w4-codespan">&lt;html&gt;</span>,
-            <span class="w4-codespan">&lt;body&gt;</span>,
-            <span class="w4-codespan">&lt;h1&gt;</span>,
-            <span class="w4-codespan">&lt;p&gt;</span> ):
+            <span class="w6-codespan">&lt;html&gt;</span>,
+            <span class="w6-codespan">&lt;body&gt;</span>,
+            <span class="w6-codespan">&lt;h1&gt;</span>,
+            <span class="w6-codespan">&lt;p&gt;</span> ):
         </p>
       </div>
        
@@ -41,21 +41,21 @@
           <p class="text-size-1-2">Example Explained</p>
           <p>
             The
-            <span class="w4-codespan">&lt;html&gt;</span>,
+            <span class="w6-codespan">&lt;html&gt;</span>,
             element is the root element and it defines the whole HTML document.
           </p>
           <p>
             It has a start tag
-            <span class="w4-codespan">&lt;html&gt;</span>
+            <span class="w6-codespan">&lt;html&gt;</span>
             and an end tag
-            <span class="w4-codespan">&lt;/html&gt;</span>
+            <span class="w6-codespan">&lt;/html&gt;</span>
             .
           </p>
           <p>
             Then, inside the
-            <span class="w4-codespan">&lt;html&gt;</span>
+            <span class="w6-codespan">&lt;html&gt;</span>
             element there is a
-            <span class="w4-codespan">&lt;body&gt;</span>
+            <span class="w6-codespan">&lt;body&gt;</span>
             element:
           </p>
         </div>
@@ -100,22 +100,22 @@
         <div class="d-flex-column h-6">
           <p>
             The
-            <span class="w4-codespan">&lt;body&gt;</span>,
+            <span class="w6-codespan">&lt;body&gt;</span>,
             element defines the document's body.
           </p>
           <p>
             It has a start tag
-            <span class="w4-codespan">&lt;body&gt;</span>
+            <span class="w6-codespan">&lt;body&gt;</span>
             and an end tag
-            <span class="w4-codespan">&lt;/body&gt;</span>
+            <span class="w6-codespan">&lt;/body&gt;</span>
           </p>
           <p>
             Then, inside the
-            <span class="w4-codespan">&lt;body&gt;</span>
+            <span class="w6-codespan">&lt;body&gt;</span>
             element there is two other elements:
-            <span class="w4-codespan">&lt;h1&gt;</span>
+            <span class="w6-codespan">&lt;h1&gt;</span>
             and
-            <span class="w4-codespan">&lt;p&gt;</span>
+            <span class="w6-codespan">&lt;p&gt;</span>
             :
           </p>
         </div>
@@ -148,14 +148,14 @@
         <div class="d-flex-column h-4">
           <p>
             The
-            <span class="w4-codespan">&lt;h1&gt;</span>,
+            <span class="w6-codespan">&lt;h1&gt;</span>,
             element defines the document's body.
           </p>
           <p>
             It has a start tag
-            <span class="w4-codespan">&lt;h1&gt;</span>
+            <span class="w6-codespan">&lt;h1&gt;</span>
             and an end tag
-            <span class="w4-codespan">&lt;/h1&gt;</span>
+            <span class="w6-codespan">&lt;/h1&gt;</span>
             :
           </p>
         </div>
@@ -179,14 +179,14 @@
         <div class="d-flex-column h-4">
           <p>
             The
-            <span class="w4-codespan">&lt;p&gt;</span>,
+            <span class="w6-codespan">&lt;p&gt;</span>,
             element defines a paragraph.
           </p>
           <p>
             It has a start tag
-            <span class="w4-codespan">&lt;p&gt;</span>
+            <span class="w6-codespan">&lt;p&gt;</span>
             and an end tag
-            <span class="w4-codespan">&lt;/p&gt;</span>
+            <span class="w6-codespan">&lt;/p&gt;</span>
             :
           </p>
         </div>
@@ -256,8 +256,8 @@
             </div>
 
           </div>
-          <!-- <button class="w4-button" v-on:click='handleRouteToTryIt'>Try it Yourself</button> -->
-          <button class="w4-button disabled">Try it Yourself</button>
+          <!-- <button class="w6-button" v-on:click='handleRouteToTryIt'>Try it Yourself</button> -->
+          <button class="w6-button disabled">Try it Yourself</button>
         </div>
         <p class="p-1 text-bold">However, never rely on this! Unexpected results and errors may occur if you forget the end tag!</p>
       </div>
@@ -270,7 +270,7 @@
           <p>HTML elements with no content are called empty elements.</p>
           <p>
             The 
-            <span class="w4-codespan">&lt;br&gt;</span>
+            <span class="w6-codespan">&lt;br&gt;</span>
             tag defines a line break, and is an empty element without a closing tag:
           </p>
         </div>
@@ -293,19 +293,19 @@
               <span class="tagcolor">></span>
             </div>
           </div>
-          <!-- <button class="w4-button" v-on:click='handleRouteToTryIt'>Try it Yourself</button> -->
-          <button class="w4-button disabled">Try it Yourself</button>
+          <!-- <button class="w6-button" v-on:click='handleRouteToTryIt'>Try it Yourself</button> -->
+          <button class="w6-button disabled">Try it Yourself</button>
         </div>
       </div>
 
       <div class="d-flex-column h-15">
         <p class="text-size-2">HTML is Not Case Sensitive</p>
-        <p>HTML tags are not case sensitive: <span class="w4-codespan">&lt;P&gt;</span> means the same as <span class="w4-codespan">&lt;p&gt;</span></p>
+        <p>HTML tags are not case sensitive: <span class="w6-codespan">&lt;P&gt;</span> means the same as <span class="w6-codespan">&lt;p&gt;</span></p>
         <p>The HTML standard does not require lowercase tags, but W3C <strong>recommends</strong> lowercase in HTML, and <strong>demands </strong> lowercase for stricter document types like XHTML.</p>
         <div id="note-container">
            <p>
             <strong>Note:</strong>
-            At W4Schools we always use lowercase tag names.
+            At W6Schools we always use lowercase tag names.
           </p>
         </div>
       </div>
@@ -314,7 +314,7 @@
 
       <div class="d-flex-column h-23">
         <p class="text-size-2">HTML Tag Reference</p>
-        <p>W4Schools' tag reference contains additional information about these tags and their attributes.</p>
+        <p>W6Schools' tag reference contains additional information about these tags and their attributes.</p>
         <table class="table-container">
           <tbody>
             <tr>
@@ -345,8 +345,8 @@
       </div>
 
       <div class="group-button-container">
-        <button class="w4-btn" v-on:click='handleRouteTo("/html/basic")'>&lt;Previous</button>
-        <button class="w4-btn" v-on:click='handleRouteTo("/html/attributes")'>Next ></button>  
+        <button class="w6-btn" v-on:click='handleRouteTo("/html/basic")'>&lt;Previous</button>
+        <button class="w6-btn" v-on:click='handleRouteTo("/html/attributes")'>Next ></button>  
       </div>
 
     </section>

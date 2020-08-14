@@ -3,11 +3,11 @@
     <section class="htmlHome-central-container">
       <p>HTML Tutorial</p>
       <div class="group-button-container">
-        <button class="w4-btn" v-on:click='handleRouteTo("/")'>&lt;Home</button>
-        <button class="w4-btn" v-on:click='handleRouteTo("/html/introduction")'>Next ></button>  
+        <button class="w6-btn" v-on:click='handleRouteTo("/")'>&lt;Home</button>
+        <button class="w6-btn" v-on:click='handleRouteTo("/html/introduction")'>Next ></button>  
       </div>
 
-      <div class="w4-info">
+      <div class="w6-info">
         <p>HTML is the standard markup language for Web pages.</p>
         <p>With HTML you can create your own Website.</p>
         <p>This tutorial follows the latest HTML5 standard.</p>
@@ -103,7 +103,7 @@
 
           </div>
 
-          <button class="w4-button disabled">Try it Yourself</button>
+          <button class="w6-button disabled">Try it Yourself</button>
 
         </div>
         <h4>Click on the "Try it Yourself" button to see how it works.</h4>
@@ -133,18 +133,18 @@
           <p class="text-size-2">Test Yourself With Exercises</p>
           <div class="htmlHome-info-exercises-inner-item-container">
             <p class="text-size-2">Exercise:</p>
-            <p>Add a "tooltip" to the paragraph below with the text "About W4Schools".</p>
+            <p>Add a "tooltip" to the paragraph below with the text "About W6Schools".</p>
             <div class="htmlHome-info-exerciser-inner-item-a">
               <p>
                 &lt;p
                 <input type="text">
-                ="About W4Schools">W4Schools is a web developer's site.
+                ="About W6Schools">W6Schools is a web developer's site.
                 <span>&lt;</span>
                 <span>/p</span>
                 <span>></span>
               </p>
             </div>
-            <button class="w4-button disabled">Submit Answer</button>
+            <button class="w6-button disabled">Submit Answer</button>
             <a href="">Start the Exercise</a>
           </div>
         </div>
@@ -156,7 +156,7 @@
       <div class="d-flex-column h-10">
         <p class="text-size-2">HTML Quiz Test</p>
         <p>Test your HTML skills with our HTML Quiz!</p>
-        <button class="w4-button-light-blue disabled">Start HTML Quiz!</button>
+        <button class="w6-button-light-blue disabled">Start HTML Quiz!</button>
       </div>
 
       <hr/>
@@ -187,8 +187,8 @@
       <hr/>
 
       <div class="group-button-container container">
-        <button class="w4-btn" v-on:click='handleRouteTo("/")'>&lt;Home</button>
-        <button class="w4-btn" v-on:click='handleRouteTo("/html/introduction")'>Next ></button>  
+        <button class="w6-btn" v-on:click='handleRouteTo("/")'>&lt;Home</button>
+        <button class="w6-btn" v-on:click='handleRouteTo("/html/introduction")'>Next ></button>  
       </div>
     </section>
   </div>
@@ -252,7 +252,7 @@ export default HtmlHomeContent
 
 
 
-.w4-btn {
+.w6-btn {
   height: 45px;
   width: 100px;
   font-size: 1.2rem;
@@ -335,7 +335,7 @@ export default HtmlHomeContent
   width: 97%;
 }
 
-.w4-button-light-blue {
+.w6-button-light-blue {
   height: 40px;
   width: 150px;
   font-size: 1rem;
@@ -371,7 +371,7 @@ export default HtmlHomeContent
   padding-left: 1rem;
 }
 
-.w4-button {
+.w6-button {
   height: 40px;
   width: 150px;
   font-size: 1rem;
@@ -382,11 +382,11 @@ export default HtmlHomeContent
   outline: none;
 }
 
-.w4-button:hover {
+.w6-button:hover {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-.w4-button-grey {
+.w6-button-grey {
   height: 40px;
   width: 10rem;
   font-size: 1rem;
@@ -398,7 +398,7 @@ export default HtmlHomeContent
   margin: 0.5rem;
 }
 
-.w4-button-grey:hover {
+.w6-button-grey:hover {
   background-color: lightgray;
   color: black;
 }
