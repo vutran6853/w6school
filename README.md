@@ -1,4 +1,4 @@
-# w4school
+# w6schools
 
 ## Project setup
 ```
