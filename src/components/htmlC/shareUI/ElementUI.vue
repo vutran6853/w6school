@@ -113,7 +113,10 @@ export default {
   height: 4rem;
   background-color: #ffffcc;
   display: flex;
-  padding: 1rem;
+  width: 100%;
   align-items: center;
+}
+#html-element-container > .html-note-container > p {
+  padding: 1rem;
 }
 </style>

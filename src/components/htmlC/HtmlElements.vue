@@ -207,7 +207,7 @@
       </div>
 
       <div class="ad-placeholder">
-        <p>AD placeholder</p>
+        <p></p>
       </div>
 
       <hr/>
@@ -298,44 +298,56 @@
         </div>
       </div>
 
-      <div class="d-flex-column h-10">
+      <div class="d-flex-column h-15">
         <p class="text-size-2">HTML is Not Case Sensitive</p>
         <p>HTML tags are not case sensitive: <span class="w4-codespan">&lt;P&gt;</span> means the same as <span class="w4-codespan">&lt;p&gt;</span></p>
         <p>The HTML standard does not require lowercase tags, but W3C <strong>recommends</strong> lowercase in HTML, and <strong>demands </strong> lowercase for stricter document types like XHTML.</p>
-      <div class="htmlIntroduction-note-container">
-        <p>
-          <strong>Note:</strong>
-         Only the content inside the &lt;body&gt; section (the white area above) will be displayed in a browser.
-        </p>
-      </div>
+        <div id="note-container">
+           <p>
+            <strong>Note:</strong>
+            At W4Schools we always use lowercase tag names.
+          </p>
+        </div>
       </div>
       
-      <!-- <hr/> -->
+      <hr/>
 
-     <!-- <div class="d-flex-column h-25 w-100">
-        <div class="d-flex-column h-5">
-          <p class="text-size-2">How to View HTML Source?</p>
-          <p>Have you ever seen a Web page and wondered "Hey! How did they do that?"</p>
+      <div class="d-flex-column h-23">
+        <p class="text-size-2">HTML Tag Reference</p>
+        <p>W4Schools' tag reference contains additional information about these tags and their attributes.</p>
+        <table class="table-container">
+          <tbody>
+            <tr>
+              <th>Tag</th>
+              <th>Description</th>
+            </tr>
+            <tr>
+              <td>&lt;html&gt;</td>
+              <td>Defines the root of an HTML document</td>
+            </tr>
+            <tr>
+              <td>&lt;body&gt;</td>
+              <td>Defines the document's body</td>
+            </tr>
+            <tr>
+              <td>&lt;h1&gt; to &lt;h6&gt;</td>
+              <td>Defines HTML headings</td>
+            </tr>
+          </tbody>
+        </table>
+        <div class="note-container">
+          <p>
+          <strong>Note:</strong>
+          For a complete list of all available HTML tags, visit our
+          <a href="">HTML Tag Reference.</a>
+        </p>
         </div>
-        <div class="d-flex-column h-5">
-          <p class="text-size-1-2">View HTML Source Code:</p>
-          <p>Right-click in an HTML page and select "View Page Source" (in Chrome) or "View Source" (in Edge), or similar in other browsers. This will open a window containing the HTML source code of the page.</p>
-        </div>
-        <div class="d-flex-column h-5">
-          <p class="text-size-1-2">Inspect an HTML Element:</p>
-          <p>Right-click on an element (or a blank area), and choose "Inspect" or "Inspect Element" to see what elements are made up of (you will see both the HTML and the CSS). You can also edit the HTML or CSS on-the-fly in the Elements or Styles panel that opens.</p>
-        </div>
-        <div class="group-button-container">
-          <button class="w4-btn" v-on:click='handleRouteTo("/html/introduction")'>&lt;Previous</button>
-          <button class="w4-btn" v-on:click='handleRouteTo("/html/basic")'>Next ></button>  
-        </div>
-     </div> -->
+      </div>
 
-      <!-- <div class="ad-placeholder">
-        <p>AD placeholder</p>
-      </div> -->
-
-
+      <div class="group-button-container">
+        <button class="w4-btn" v-on:click='handleRouteTo("/html/basic")'>&lt;Previous</button>
+        <button class="w4-btn" v-on:click='handleRouteTo("/html/attributes")'>Next ></button>  
+      </div>
 
     </section>
   </div>
@@ -414,27 +426,45 @@ export default HtmlBasic
   flex-direction: column;
   width: 100%;
   justify-content: space-between;
-  /* padding: 0.5rem; */
 }
 
-.htmlElements-table-container > tbody > tr {
-  display: flex;
-  flex-direction: row;
+.note-container {
+  height: 4rem;
+  background-color: #ffffcc;
   width: 100%;
-  border-bottom: 1px solid #ddd;
-  height: 40px;
-  justify-content: space-around;
+  display: flex;
   align-items: center;
 }
-
-.htmlElements-table-container > tbody > tr > td {
-  width: 100%;
-  text-align: center;
+.note-container > p {
+  padding: 1rem;
 }
 
-.htmlElements-table-container > tbody > tr:nth-child(even) {
+.table-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #ccc;
+}
+.table-container > tbody > tr {
+  display: flex;
+  flex-direction: row;
+  border-bottom: 1px solid #ddd;
+  height: 40px;
+  
+  align-items: center;
+}
+.table-container > tbody > tr > th:nth-child(1),
+.table-container > tbody > tr > td:nth-child(1) {
+  width: 25%;
+  text-align: left;
+  padding-left: 1rem;
+}
+.table-container > tbody > tr > th:nth-child(2),
+.table-container > tbody > tr > td:nth-child(2) {
+  width: 75%;
+  text-align: left;
+}
+.table-container > tbody > tr:nth-child(even) {
   background-color: #f1f1f1;
 }
-
-
 </style>

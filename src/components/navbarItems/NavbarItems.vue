@@ -1,20 +1,20 @@
 <template>
-  <div>
+  <div id="navbarItems" class="navbarItems-container" v-on:scroll.passive='handleScroll' v-bind:class='state.navbarItemsClassStatus'  >
 
-    <div class="navbarItems-group-items-1" v-if='navbarItemGroup1.isTrue'>
+    <div class="navbarItems-group-items-1 " v-if='navbarItemGroup1.isTrue'>
 
-      <ul>
+      <ul class="disabled">
         <li v-for='(value) in navbarItemGroup1.items' 
           v-bind:key='value.id'
           v-on:click='handleShowInfo(value.id)'
           >{{ value.name }}</li>
       </ul>
 
-      <div>
+      <!-- <div>
         <p>toggleIron</p>
         <p>earth</p>
         <p>search</p>
-      </div>
+      </div> -->
     </div>
 
     <div class="navbarItems-group-items-2" v-if='navbarItemGroup2.isTrue'>
@@ -26,21 +26,21 @@
           >{{ value.name }}</li>
       </ul>
 
-      <div>
+      <!-- <div>
         <p>toggleIron</p>
         <p>earth</p>
         <p>search</p>
-      </div>
+      </div> -->
     </div>
 
 
-    <div class="navvbarItems-group-items-0" v-if='navbarItemGroup1.items[0].isShowInfo'>
+    <div class="navvbarItems-group-items-0 " v-if='navbarItemGroup1.items[0].isShowInfo'>
       <div>
         <h3>HTML and CSS</h3>
-        <p v-on:click='handleChangeNav'>Learn HTML</p>
+        <p>Learn HTML</p>
         <p>Learn CSS</p>
         <p>Learn Bootstrap</p>
-        <p>Learn W3.CSS</p>
+        <p>Learn W4.CSS</p>
         <p>Learn Colors</p>
         <p>Learn Icons</p>
         <p>Learn Graphices</p>
@@ -58,7 +58,7 @@
         <p>Learn AngularJS</p>
         <p>Learn JSON</p>
         <p>Learn AJAX</p>
-        <p>Learn W3.JS</p>
+        <p>Learn W4.JS</p>
       </div>
 
 
@@ -93,7 +93,7 @@
         <p>CSS Browser Support</p>
         <p>Bootstrap3 Reference</p>
         <p>Bootstrap4 Reference</p>
-        <p>W3.CSS Reference</p>
+        <p>W4.CSS Reference</p>
         <p>Icon Reference</p>
         <p>Sass Reference</p>
       </div>
@@ -103,7 +103,7 @@
         <p>JavaScript Reference</p>
         <p>HTML DOM Reference</p>
         <p>jQuery Reference</p>
-        <p>W3 .JS Reference</p>
+        <p>W4 .JS Reference</p>
       </div>
 
 
@@ -148,32 +148,13 @@ interface INavbarItemsState {
 
 const NavbarItems = Vue.extend({
   name: 'NavbarItems',
-  // data(): INavbarItemsState {
-  //   return {
-  //     state: {
-  //       navbarItemGroup1: {
-  //         isTrue: true,
-  //         items: [
-  //           { id: 0, name: 'Tutorials', isHover: false, isShowInfo: false },
-  //           { id: 1, name: 'References', isHover: false, isShowInfo: false },
-  //           { id: 2, name: 'Examples', isHover: false, isShowInfo: false },
-  //           { id: 3, name: 'Exercises', isHover: false, isShowInfo: false }
-  //         ]
-  //       },
-  //       navbarItemGroup2: {
-  //          isTrue: false,
-  //          items: [
-  //           { id: 0, name: 'HTML', isHover: false, isShowInfo: false },
-  //           { id: 1, name: 'CSS', isHover: false, isShowInfo: false },
-  //           { id: 2, name: 'JAVASCRIPT', isHover: false, isShowInfo: false },
-  //           { id: 3, name: 'SQL', isHover: false, isShowInfo: false },
-  //           { id: 4, name: 'PYTHON', isHover: false, isShowInfo: false },
-  //           { id: 5, name: 'MORE', isHover: false, isShowInfo: false }
-  //         ]
-  //       }
-  //     }
-  //   }
-  // },
+  data() {
+    return {
+      state: {
+        navbarItemsClassStatus: 'navbarItems-group-items-2'
+      }
+    }
+  },
   computed: {
     navbarItemGroup1: {
       get() {
@@ -203,24 +184,19 @@ const NavbarItems = Vue.extend({
       //   return value
       // })
     },
-    handleChangeNav() {
-      this.state.navbarItemGroup1.isTrue = false
-      this.state.navbarItemGroup2.isTrue = true
-    }
-  },
-  watch: {
-    // $route(to, from) {
-    //   console.log({to, from})
-    //   // react to route changes...
-    //   if (to.path === '/html') {
-    //     this.state.navbarItemGroup1.isTrue = false
-    //     this.state.navbarItemGroup2.isTrue = true
-    //   }
-    //   if (to.path === '/') {
-    //     this.state.navbarItemGroup1.isTrue = true
-    //     this.state.navbarItemGroup1.items[0].isShowInfo = false
-    //     this.state.navbarItemGroup2.isTrue = false
-    //   }
+    handleScroll() {
+      if (window.scrollY < 100) {
+        // this.state.navbarItemsClassStatus = 'navbarItems-group-items-2'
+      } else {
+        // this.state.navbarItemsClassStatus = 'navbarItems-container-fixed'
+        // this.handleRemoveScrollEffect()
+      }
+      return null
+    },
+    // handleRouteTo(passUrl: string) {
+    //   this.$router.push({
+    //     path: passUrl
+    //   })
     // }
   }
 })
@@ -229,12 +205,25 @@ export default NavbarItems
 </script>
 
 <style>
+.navbarItems-container {
+  position: relative; 
+}
+
+/* .navbarItems-container-fixed {
+  position: fixed;
+  left: 14rem;
+  width: 100%;
+  z-index: 1;
+} */
 .navbarItems-group-items-1 {
   height: 60px;
   background-color: green;
   display: flex;
   justify-content: space-between;
 }
+
+
+
 .navbarItems-group-items-2 {
   height: 60px;
   background-color: #5f5f5f;
@@ -269,8 +258,9 @@ export default NavbarItems
   background-color: whitesmoke;
   color: black;
 }
-
-
+.navbarItems-group-items-1 > ul > li:hover {
+  cursor: not-allowed;
+}
 
 .navbarItems-group-items-2 > ul {
   /* background-color: lightseagreen; */
@@ -301,6 +291,30 @@ export default NavbarItems
 
 .navbarItems-group-items-2 > ul > li:hover {
   background-color: black;
+}
+
+@media only screen and (max-device-width: 480px) {
+  #navbarItems > div.navbarItems-group-items-1 {
+    width: 100%;
+  }
+
+  #navbarItems > div.navbarItems-group-items-1 > ul {
+    font-size: 1rem;
+    flex-direction: column;
+  }
+  #navbarItems > div.navbarItems-group-items-2 > ul {
+    font-size: 1rem;
+    flex-direction: column;
+  }
+
+  #navbarItems > div.navbarItems-group-items-1 > ul > li {
+    /* width: 6.5rem; */
+    width: 7.54375rem;
+  }
+    #navbarItems > div.navbarItems-group-items-2 > ul > li {
+    /* width: 6.5rem; */
+    width: 7.54375rem;
+  }
 }
 
 </style>

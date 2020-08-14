@@ -1,190 +1,192 @@
 <template>
-  <div style="border-left: 3px solid gainsboro;">
-    <section class="htmlIntroduction-main-container">
-      <div class="htmlIntroduction-inner-item-a">
-        <p>HTML Introduction</p>
-        <div class="group-button-container">
-          <button class="w4-btn" v-on:click='handleRouteTo("/html")'>&lt;Previous</button>
-          <button class="w4-btn" v-on:click='handleRouteTo("/html/basic")'>Next ></button>  
-        </div>
+  <section class="htmlIntroduction-main-container" style="border-left: 3px solid gainsboro;">
+    <div class="htmlIntroduction-inner-item-a">
+      <p>HTML Introduction</p>
+      <div class="group-button-container">
+        <button class="w4-btn" v-on:click='handleRouteTo("/html")'>&lt;Previous</button>
+        <button class="w4-btn" v-on:click='handleRouteTo("/html/basic")'>Next ></button>  
       </div>
+    </div>
 
-      <hr/>
-      
-      <div class="d-flex-column">
-        <p>HTML is the standard markup language for creating Web pages.</p>
-      </div>
-      
-      <hr/>
-      
+    <hr/>
+    
+    <div class="d-flex-column">
+      <p>HTML is the standard markup language for creating Web pages.</p>
+    </div>
+    
+    <hr/>
+    
+    <!-- What is HTML? -->
+    <div class="htmlIntroduction-what-html-container">
+      <p class="text-size-2">What is HTML?</p>
+      <ul>
+        <li>HTML stands for Hyper Text Markup Language</li>
+        <li>HTML is the standard markup language for creating Web pages</li>
+        <li>HTML describes the structure of a Web page</li>
+        <li>HTML consists of a series of elements</li>
+        <li>HTML elements tell the browser how to display the content</li>
+        <li>HTML elements label pieces of content such as "this is a heading", "this is a paragraph", "this is a link", etc.</li>
+      </ul>
+    </div>
 
-      <div class="htmlIntroduction-what-html-container">
-        <p class="text-size-2">What is HTML?</p>
-        <ul>
-          <li>HTML stands for Hyper Text Markup Language</li>
-          <li>HTML is the standard markup language for creating Web pages</li>
-          <li>HTML describes the structure of a Web page</li>
-          <li>HTML consists of a series of elements</li>
-          <li>HTML elements tell the browser how to display the content</li>
-          <li>HTML elements label pieces of content such as "this is a heading", "this is a paragraph", "this is a link", etc.</li>
-        </ul>
-      </div>
+    <hr/>
 
-      <hr/>
+    <!-- A Simple HTML Document -->
+    <div class="htmlIntroduction-info-container">
+      <p class="text-size-2">A Simple HTML Document</p>
+      <div class="htmlIntroduction-info-inner-example-item-a">
+        <p>Example</p>
+        <div class="code-example-inner-container h-17">
+          <div>
+            <span class="tagcolor">&lt;</span>
+            <span class="color-brown">!DOCTYPE </span>
+            <span class="color-red">html</span>
+            <span class="tagcolor">></span>
 
-      <div class="htmlIntroduction-info-container">
-        <p class="text-size-2">A Simple HTML Document</p>
-        <div class="htmlIntroduction-info-inner-example-item-a">
-
-          <p>Example</p>
-
-          <div class="code-example-inner-container h-17">
-            <div>
-              <span class="tagcolor">&lt;</span>
-              <span class="color-brown">!DOCTYPE </span>
-              <span class="color-red">html</span>
-              <span class="tagcolor">></span>
-
-              <br />
-              
-              <span class="tagcolor">&lt;</span>
-              <span class="color-red">html</span>
-              <span class="tagcolor">></span>
-
-              <br />
-
-              <span class="tagcolor">&lt;</span>
-              <span class="color-red">head</span>
-              <span class="tagcolor">></span>
-
-              <br />
-
-              <span class="tagcolor">&lt;</span>
-              <span class="color-red">title</span>
-              <span class="tagcolor">></span>
-              <span>Page Title</span>
-              <span class="tagcolor">&lt;</span>
-              <span class="color-red">/title</span>
-              <span class="tagcolor">></span>
-
-              <br />
-              <span class="tagcolor">&lt;</span>
-              <span class="color-red">/head</span>
-              <span class="tagcolor">></span>
-
-              <br />
-              <span class="tagcolor">&lt;</span>
-              <span class="color-red">body</span>
-              <span class="tagcolor">></span>
-            </div>
-
-          
-
-            <div>
-              <span class="tagcolor">&lt;</span>
-              <span class="color-red">h1</span>
-              <span class="tagcolor">></span>
-              <span>This is a heading</span>
-              <span class="tagcolor">&lt;</span>
-              <span class="color-red">/h1</span>
-              <span class="tagcolor">></span>
-
-              <br />
-              
-              <span class="tagcolor">&lt;</span>
-              <span class="color-red">p</span>
-              <span class="tagcolor">></span>
-              <span>This is a paragraph.</span>
-              <span class="tagcolor">&lt;</span>
-              <span class="color-red">/p</span>
-              <span class="tagcolor">></span>
-            </div>
+            <br />
             
-            <div>
-              <span class="tagcolor">&lt;</span>
-              <span class="color-red">/body</span>
-              <span class="tagcolor">></span>
+            <span class="tagcolor">&lt;</span>
+            <span class="color-red">html</span>
+            <span class="tagcolor">></span>
 
-              <br />
+            <br />
 
-              <span class="tagcolor">&lt;</span>
-              <span class="color-red">/html</span>
-              <span class="tagcolor">></span>
-            </div>
+            <span class="tagcolor">&lt;</span>
+            <span class="color-red">head</span>
+            <span class="tagcolor">></span>
 
-  
+            <br />
 
+            <span class="tagcolor">&lt;</span>
+            <span class="color-red">title</span>
+            <span class="tagcolor">></span>
+            <span>Page Title</span>
+            <span class="tagcolor">&lt;</span>
+            <span class="color-red">/title</span>
+            <span class="tagcolor">></span>
+
+            <br />
+            <span class="tagcolor">&lt;</span>
+            <span class="color-red">/head</span>
+            <span class="tagcolor">></span>
+
+            <br />
+            <span class="tagcolor">&lt;</span>
+            <span class="color-red">body</span>
+            <span class="tagcolor">></span>
           </div>
 
-          <button class="w4-button" v-on:click='handleRouteToTryIt'>Try it Yourself</button>
+        
 
-        </div>
+          <div>
+            <span class="tagcolor">&lt;</span>
+            <span class="color-red">h1</span>
+            <span class="tagcolor">></span>
+            <span>This is a heading</span>
+            <span class="tagcolor">&lt;</span>
+            <span class="color-red">/h1</span>
+            <span class="tagcolor">></span>
 
-        <div class="htmlIntroduction-info-inner-example-item-b">
-          <p class="text-size-1-2">Example Explained</p>
-          <ul>
-            <li>The <span class="w4-codespan">&lt;!DOCTYPE html&gt;</span> declaration defines that this document is an HTML5 document</li>
-            <li>The <span class="w4-codespan">&lt;html&gt;</span> element is the root element of an HTML page</li>
-            <li>The <span class="w4-codespan">&lt;head&gt;</span> element contains meta information about the HTML page</li>
-            <li>The <span class="w4-codespan">&lt;title&gt;</span> element specifies a title for the HTML page (which is shown in the browser's title bar or in the page's tab)</li>
-            <li>The <span class="w4-codespan">&lt;body&gt;</span> element defines the document's body, and is a container for all the visible contents, such as headings, paragraphs, images, hyperlinks, tables, lists, etc.</li>
-            <li>The <span class="w4-codespan">&lt;h1&gt;</span> element defines a large heading</li>
-            <li>The <span class="w4-codespan">&lt;p&gt;</span> element defines a paragraph</li>
-          </ul>
-        </div>
-      </div>
-
-      <hr/>
-
-      <ElementUI title='What is an HTML Element?'  />
-
-      <hr/>
-
-      <div class="htmlIntroduction-page-structure-container">
-        <p class="text-size-2">HTML Page Structure</p>
-        <p>Below is a visualization of an HTML page structure:</p>
-
-        <div class="htmlIntroduction-page-structure-inner-container">
-          <span>&lt;html&gt;</span>
-
-          <!-- <div> -->
-            <div class="htmlIntroduction-page-structure-inner-a">
-              <span>&lt;head&gt;</span>
-
-              <div class="border-grey w-90 ml-1 p-0-5">
-                 &lt;title&gt;Page title&lt;/title&gt;
-              </div>
-
-              <span>&lt;/head&gt;</span>
-            </div>
-
-            <div class="htmlIntroduction-page-structure-inner-b h-15">
-              <span>&lt;body&gt;</span>
-
-              <div class="htmlIntroduction-page-structure-inner-b-a">
-                <p>&lt;h1&gt;This is a heading&lt;/h1&gt;</p>
-                <p>&lt;p&gt;This is a paragraph.&lt;/p&gt;</p>
-                <p>&lt;p&gt;This is another paragraph.&lt;p&gt;</p>
-              </div>
-
-              <span>&lt;/body&gt;</span>
-            </div>
-          <!-- </div> -->
+            <br />
+            
+            <span class="tagcolor">&lt;</span>
+            <span class="color-red">p</span>
+            <span class="tagcolor">></span>
+            <span>This is a paragraph.</span>
+            <span class="tagcolor">&lt;</span>
+            <span class="color-red">/p</span>
+            <span class="tagcolor">></span>
+          </div>
           
-          <span>&lt;/html&gt;</span>
+          <div>
+            <span class="tagcolor">&lt;</span>
+            <span class="color-red">/body</span>
+            <span class="tagcolor">></span>
+
+            <br />
+
+            <span class="tagcolor">&lt;</span>
+            <span class="color-red">/html</span>
+            <span class="tagcolor">></span>
+          </div>
+
+
+
         </div>
+
+        <button class="w4-button disabled" v-on:click='handleRouteToTryIt'>Try it Yourself</button>
+
       </div>
 
-      <div class="htmlIntroduction-note-container">
-        <p>
-          <strong>Note:</strong>
-         Only the content inside the &lt;body&gt; section (the white area above) will be displayed in a browser.
-        </p>
+      <div class="htmlIntroduction-info-inner-example-item-b">
+        <p class="text-size-1-2">Example Explained</p>
+        <ul>
+          <li>The <span class="w4-codespan">&lt;!DOCTYPE html&gt;</span> declaration defines that this document is an HTML5 document</li>
+          <li>The <span class="w4-codespan">&lt;html&gt;</span> element is the root element of an HTML page</li>
+          <li>The <span class="w4-codespan">&lt;head&gt;</span> element contains meta information about the HTML page</li>
+          <li>The <span class="w4-codespan">&lt;title&gt;</span> element specifies a title for the HTML page (which is shown in the browser's title bar or in the page's tab)</li>
+          <li>The <span class="w4-codespan">&lt;body&gt;</span> element defines the document's body, and is a container for all the visible contents, such as headings, paragraphs, images, hyperlinks, tables, lists, etc.</li>
+          <li>The <span class="w4-codespan">&lt;h1&gt;</span> element defines a large heading</li>
+          <li>The <span class="w4-codespan">&lt;p&gt;</span> element defines a paragraph</li>
+        </ul>
       </div>
+    </div>
 
-      <hr/>
+    <hr/>
 
-      <table class="htmlIntroduction-table-all">
+    <ElementUI title='What is an HTML Element?'  />
+
+    <hr/>
+
+    <!-- HTML Page Structure -->
+    <div class="htmlIntroduction-page-structure-container">
+      <p class="text-size-2">HTML Page Structure</p>
+      <p>Below is a visualization of an HTML page structure:</p>
+
+      <div class="htmlIntroduction-page-structure-inner-container">
+        <span>&lt;html&gt;</span>
+
+        <!-- <div> -->
+          <div class="htmlIntroduction-page-structure-inner-a">
+            <span>&lt;head&gt;</span>
+
+            <div class="border-grey w-90 ml-1 p-0-5">
+                &lt;title&gt;Page title&lt;/title&gt;
+            </div>
+
+            <span>&lt;/head&gt;</span>
+          </div>
+
+          <div class="htmlIntroduction-page-structure-inner-b h-15">
+            <span>&lt;body&gt;</span>
+
+            <div class="htmlIntroduction-page-structure-inner-b-a">
+              <p>&lt;h1&gt;This is a heading&lt;/h1&gt;</p>
+              <p>&lt;p&gt;This is a paragraph.&lt;/p&gt;</p>
+              <p>&lt;p&gt;This is another paragraph.&lt;p&gt;</p>
+            </div>
+
+            <span>&lt;/body&gt;</span>
+          </div>
+        <!-- </div> -->
+        
+        <span>&lt;/html&gt;</span>
+      </div>
+    </div>
+
+    <div class="note-container container">
+      <p>
+        <strong>Note:</strong>
+        Only the content inside the &lt;body&gt; section (the white area above) will be displayed in a browser.
+      </p>
+    </div>
+
+    <hr/>
+
+    <!-- HTML History -->
+    <div class="d-flex-column h-30">
+      <p class="text-size-2">HTML History</p>
+      <table class="htmlIntroduction-table-all w-100">
         <tbody>
           <tr>
             <th>Year</th>
@@ -244,22 +246,24 @@
           </tr>
         </tbody>
       </table>
+    </div>
 
-      <div class="htmlIntroduction-note-container">
-        <p>This tutorial follows the latest HTML 5 standard.</p>
-      </div>
 
-      <!-- <div class="ad-placeholder">
-        <p>AD placeholder</p>
-      </div> -->
 
-      <div class="group-button-container">
-        <button class="w4-btn" v-on:click='handleRouteTo("/html")'>&lt;Previous</button>
-        <button class="w4-btn" v-on:click='handleRouteTo("/html/basic")'>Next ></button>  
-      </div>
+    <div class="note-container">
+      <p><strong>Note:</strong> Tutorial follows the latest HTML 5 standard.</p>
+    </div>
 
-    </section>
-  </div>
+    <!-- <div class="ad-placeholder">
+      <p></p>
+    </div> -->
+
+    <div class="group-button-container container">
+      <button class="w4-btn" v-on:click='handleRouteTo("/html")'>&lt;Previous</button>
+      <button class="w4-btn" v-on:click='handleRouteTo("/html/basic")'>Next ></button>  
+    </div>
+
+  </section>
 </template>
 
 <script lang="ts">
@@ -304,6 +308,7 @@ export default HtmlIntroduction
 </script>
 
 <style>
+@import url(./shareStyle/shareStyle.css);
 
 .htmlIntroduction-main-container {
   display: flex;
@@ -319,10 +324,6 @@ export default HtmlIntroduction
   margin-bottom: 1rem;
   margin-top: 1rem;
   font-size: 2.5rem;
-}
-.group-button-container {
-  display: flex;
-  justify-content: space-between;
 }
 
 
@@ -411,16 +412,16 @@ export default HtmlIntroduction
   border-spacing: 0;
   display: table;
   border: 1px solid #ccc;
-  width: 50%;
+  /* width: 50%; */
 }
 
 .htmlIntroduction-table-all > tbody {
   width: initial;
 }
 .htmlIntroduction-table-all > tbody > tr {
-  border-bottom: 1px solid #ddd;
-  padding: 1rem !important;
+  height: 30px;
 }
+
 .htmlIntroduction-table-all > tbody > tr:nth-child(even) {
   background-color: #f1f1f1;
 }
@@ -430,36 +431,16 @@ export default HtmlIntroduction
 .htmlIntroduction-table-all > tbody > tr > td:nth-child(1) {
   text-align: center;
 }
-
+.htmlIntroduction-table-all > tbody > tr {
+  border-bottom: 1px solid #ddd;
+  /* padding: 1rem; */
+}
 
 
 .w4-btn {
   height: 45px;
   width: 100px;
   font-size: 1.2rem;
-  background-color: #4CAF50;
-  border: none;
-  cursor: pointer;
-  color: white;
-  outline: none;
-}
-
-
-.w4-info {
-  background-color: #d4edda;
-  height: 14rem;
-  display: flex;
-  padding: 1rem;
-  flex-direction: column;
-  justify-content: space-between;
-  margin-bottom: 1rem;
-  margin-top: 1rem;
-}
-
-.w4-info > button {
-  height: 40px;
-  width: 13vw;
-  font-size: 1rem;
   background-color: #4CAF50;
   border: none;
   cursor: pointer;
@@ -567,18 +548,6 @@ export default HtmlIntroduction
   width: 100%;
 }
 
-.d-flex-gird > button {
-  height: 60px;
-  cursor: pointer;
-  border: none;
-  outline: none;
-}
-
-.d-flex-gird > button:hover {
-  background-color: #555;
-  color: white;
-}
-
 .htmlIntroduction-references-container {
   display: flex;
   flex-direction: column;
@@ -586,58 +555,6 @@ export default HtmlIntroduction
   margin-bottom: 1rem;
   margin-top: 1rem;
 }
-
-
-
-
-
-
-
-
-
-
-.code-section-example-container {
-  height: 30rem;
-  /* border: 1px solid gainsboro; */
-  border-left: 3px solid #dcdcdc;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  /* display: flex; */
-}
-
-.code-section-example-container:nth-child(even) {
-  background-color: #f1f1f1;
-  display: flex;
-  flex-direction: row-reverse;
-}
-
-.code-section-example-item-left-container {
-  /* border: 2px solid firebrick; */
-  height: 12rem;
-  width: 30rem;
-  /* text-align: center; */
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
-  /* margin: auto; */
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 1rem;
-}
-.code-section-example-item-left-container > h3 {
-  font-size: 5rem;
-}
-
-.code-section-example-item-left-container > p {
-  font-size: 1.5rem;
-}
-
-
-
-
-
-
 
 
 
@@ -684,5 +601,9 @@ export default HtmlIntroduction
   /* justify-content: space-around; */
 }
 
-
+@media only screen and (max-device-width: 480px) {
+  .htmlIntroduction-main-container >* .htmlIntroduction-info-inner-example-item-b {
+    height: 25rem;
+  }
+}
 </style>

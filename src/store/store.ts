@@ -1,5 +1,5 @@
 import Vue from 'vue'
-import Vuex, { Store as VuexStore, ActionTree, MutationTree, GetterTree, CommitOptions, DispatchOptions } from 'vuex'
+import Vuex, { Store as VuexStore, ActionTree, MutationTree, GetterTree } from 'vuex'
 
 Vue.use(Vuex)
 
@@ -58,11 +58,11 @@ const state: IStoreState = {
      isTrue: false,
      items: [
       { id: 0, name: 'HTML', isHover: false, isShowInfo: false },
-      { id: 1, name: 'CSS', isHover: false, isShowInfo: false },
-      { id: 2, name: 'JAVASCRIPT', isHover: false, isShowInfo: false },
-      { id: 3, name: 'SQL', isHover: false, isShowInfo: false },
-      { id: 4, name: 'PYTHON', isHover: false, isShowInfo: false },
-      { id: 5, name: 'MORE', isHover: false, isShowInfo: false }
+      // { id: 1, name: 'CSS', isHover: false, isShowInfo: false },
+      // { id: 2, name: 'JAVASCRIPT', isHover: false, isShowInfo: false },
+      // { id: 3, name: 'SQL', isHover: false, isShowInfo: false },
+      // { id: 4, name: 'PYTHON', isHover: false, isShowInfo: false },
+      // { id: 5, name: 'MORE', isHover: false, isShowInfo: false }
     ]
   }
 }

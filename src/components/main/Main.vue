@@ -7,10 +7,10 @@
       <div class="main-side-left-container">
         <div class="main-side-items-container">
           <h3>HTML and CSS</h3>
-          <p>Learn HTML</p>
+          <p class="available" v-on:click='handleRouteTo("/html")'>Learn HTML</p>
           <p>Learn CSS</p>
           <p>Learn Bootstrap</p>
-          <p>Learn W3.CSS</p>
+          <p>Learn W4.CSS</p>
           <p>Learn Colors</p>
           <p>Learn Icons</p>
           <p>Learn Graphices</p>
@@ -28,7 +28,7 @@
           <p>Learn AngularJS</p>
           <p>Learn JSON</p>
           <p>Learn AJAX</p>
-          <p>Learn W3.JS</p>
+          <p>Learn W4.JS</p>
         </div>
 
 
@@ -70,7 +70,7 @@
             <p>The language for building web pages</p>
             <div class="code-section-example-item-left-group-button">
               <button class="w4-button-grey" v-on:click='handleRouteTo("html")'>LEARN HTML</button>
-              <button class="w4-button-grey">HTML REFERENCE</button>  
+              <button class="w4-button-grey disabled">HTML REFERENCE</button>  
             </div>
           </div>
 
@@ -146,7 +146,7 @@
 
             </div>
 
-            <button class="w4-button">Try it Yourself</button>
+            <button class="w4-button disabled">Try it Yourself</button>
           </div>
         </section>
 
@@ -156,8 +156,8 @@
             <h3>CSS</h3>
             <p>The language for styling web pages</p>
             <div class="code-section-example-item-left-group-button">
-              <button class="w4-button-grey">LEARN CSS</button>
-              <button class="w4-button-grey">CSS REFERENCE</button>  
+              <button class="w4-button-grey disabled">LEARN CSS</button>
+              <button class="w4-button-grey disabled">CSS REFERENCE</button>  
             </div>
           </div>
 
@@ -220,7 +220,7 @@
 
             </div>
 
-            <button class="w4-button">Try it Yourself</button>
+            <button class="w4-button disabled">Try it Yourself</button>
           </div>
         </section>
 
@@ -230,8 +230,8 @@
             <h3>JavaScript</h3>
             <p>The language for programming web pages</p>
             <div class="code-section-example-item-left-group-button">
-              <button class="w4-button-grey">LEARN JAVASCRIPT</button>
-              <button class="w4-button-grey">JAVASCRIPT REFERENCE</button>  
+              <button class="w4-button-grey disabled">LEARN JAVASCRIPT</button>
+              <button class="w4-button-grey disabled">JAVASCRIPT REFERENCE</button>  
             </div>
           </div>
 
@@ -289,7 +289,7 @@
                   
             </div>
 
-            <button class="w4-button">Try it Yourself</button>
+            <button class="w4-button disabled">Try it Yourself</button>
           </div>
         </section>
 
@@ -299,8 +299,8 @@
             <h3>SQL</h3>
             <p>A language for accessing databases</p>
             <div class="code-section-example-item-left-group-button">
-              <button class="w4-button-grey">LEARN SQL</button>
-              <button class="w4-button-grey">SQL REFERENCE</button>  
+              <button class="w4-button-grey disabled">LEARN SQL</button>
+              <button class="w4-button-grey disabled">SQL REFERENCE</button>  
             </div>
           </div>
 
@@ -329,11 +329,9 @@
 
             </div>
 
-            <button class="w4-button" ref="Nom">Try it Yourself</button>
+            <button class="w4-button disabled" ref="Nom">Try it Yourself</button>
           </div>
         </section>
-
-
       </div>
     </div>
   </div>
@@ -352,8 +350,11 @@ const Main = Vue.extend({
     NavbarItems
   },
   created() {
-    this.$store.state
     this.$store.dispatch(action.setNavbarItemsToDefault)
+  },
+  mounted() {
+    // console.log('window.innerHeight', window.innerHeight)
+    console.log('innerWidth', window.screen)
   },
   methods: {
     handleRouteTo(urlPath: string) {
@@ -368,17 +369,15 @@ export default Main
 </script>
 
 <style>
+@import url(../htmlC/shareStyle/shareStyle.css);
 
 .main-container {
   display: grid;
   grid-template-columns: 14rem 1fr;
   font-size: 1.1rem;
 }
+
 .main-side-left-container {
-  /* background-color: red; */
-  /* box-shadow: 3px 0 grey; */
-  /* width: 13rem; */
-  /* border: 5px solid red; */
   height: 100vh;
   display: flex;
   flex-direction: column;
@@ -386,51 +385,30 @@ export default Main
   padding-left: 1rem;
 }
 
+.main-side-items-container {
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+}
+
 .main-side-items-container > h3 {
   margin-bottom: 1rem;
 }
 
+.main-side-items-container > p {
+  padding-top: 0.2rem;
+  padding-bottom: 0.2rem;
+}
+
 .main-side-items-container > p:hover {
+  cursor: not-allowed;
+  background-color: gray;
+}
+
+.main-side-items-container > .available:hover {
   background-color: gray;
   cursor: pointer;
 }
 
-.code-section-example-container {
-  height: 30rem;
-  /* border: 1px solid gainsboro; */
-  border-left: 3px solid gainsboro;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  /* display: flex; */
-}
-
-.code-section-example-container:nth-child(even) {
-  background-color: #f1f1f1;
-  display: flex;
-  flex-direction: row-reverse;
-}
-
-.code-section-example-item-left-container {
-  /* border: 2px solid firebrick; */
-  height: 12rem;
-  width: 30rem;
-  /* text-align: center; */
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
-  /* margin: auto; */
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 1rem;
-}
-.code-section-example-item-left-container > h3 {
-  font-size: 5rem;
-}
-
-.code-section-example-item-left-container > p {
-  font-size: 1.5rem;
-}
 
 .code-section-example-item-right-container {
   border: 2px solid lightgray;
@@ -501,4 +479,52 @@ export default Main
   /* justify-content: space-around; */
 }
 
+@media only screen and (max-width: 480px) {
+  .main-container {
+    grid-template-columns: 1fr;
+  }
+  .main-container > div.main-side-left-container {
+    display: none;
+  }
+
+  .main-container > div:nth-child(2) {
+    width: 100%;
+  }
+
+  .main-container > div:nth-child(2) > section > div:nth-child(2) {
+    display: none;
+  }
+
+  .main-container > div:nth-child(2) > section.code-section-example-container {
+    /* background-color: rebeccapurple; */
+    grid-template-columns: 10rem;
+    border: none;
+  }
+  
+  .main-container > div:nth-child(2) > section.code-section-example-container {
+    /* width: 100%; */
+    height: 100%;
+  } 
+
+  .main-container > div:nth-child(2) > section.code-section-example-container:nth-child(odd) > .code-section-example-item-left-container {
+    width: 30.2rem;
+    /* background-color: red; */
+  }
+    .main-container > div:nth-child(2) > section.code-section-example-container:nth-child(even) > .code-section-example-item-left-container {
+    width: 30.2rem;
+    /* background-color: blue; */
+  }
+}
+@media (max-width: 768px) and (min-width: 481px) {
+/* @media only screen and (max-width: 768px) { */
+    .main-container {
+    /* background-color: red; */
+    /* grid-template-columns: 1fr; */
+  }
+  .main-container > div:nth-child(2) > section.code-section-example-container {
+    display: flex;
+    flex-direction: column;
+    height: 42rem;
+  }
+}
 </style>

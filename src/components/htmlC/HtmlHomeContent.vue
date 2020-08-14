@@ -12,11 +12,12 @@
         <p>With HTML you can create your own Website.</p>
         <p>This tutorial follows the latest HTML5 standard.</p>
         <p>HTML is easy to learn - You will enjoy it!</p>
-        <button>Start Learning HTML now >></button>
+        <button class="disabled">Start Learning HTML now >></button>
       </div>
 
       <hr/>
 
+      <!-- Easy Learning with HTML "Try it Yourself" -->
       <div class="htmlHome-info-container">
         <p class="text-size-2">Easy Learning with HTML "Try it Yourself"</p>
         <p>With our "Try it Yourself" editor, you can edit the HTML code and view the result:</p>
@@ -102,13 +103,14 @@
 
           </div>
 
-          <button class="w4-button">Try it Yourself</button>
+          <button class="w4-button disabled">Try it Yourself</button>
 
         </div>
         <h4>Click on the "Try it Yourself" button to see how it works.</h4>
         <hr/>
       </div>
 
+      <!-- HTML Examples -->
       <div class="d-flex-column h-10">
         <p class="text-size-2">HTML Examples</p>
         <p style="">In this HTML tutorial, you will find more than 200 examples. With our online "Try it Yourself" editor, you can edit and test each example yourself!</p>
@@ -118,11 +120,12 @@
       <hr/>
 
       <div class="ad-placeholder">
-        <p>AD placeholder</p>
+        <p></p>
       </div>
 
       <hr/>
 
+      <!-- HTML Exercises -->
       <div class="htmlHome-info-exercisers-container">
         <p class="text-size-2">HTML Exercises</p>
         <p>This HTML tutorial also contains nearly 100 HTML exercises.</p>
@@ -130,18 +133,18 @@
           <p class="text-size-2">Test Yourself With Exercises</p>
           <div class="htmlHome-info-exercises-inner-item-container">
             <p class="text-size-2">Exercise:</p>
-            <p>Add a "tooltip" to the paragraph below with the text "About W3Schools".</p>
+            <p>Add a "tooltip" to the paragraph below with the text "About W4Schools".</p>
             <div class="htmlHome-info-exerciser-inner-item-a">
               <p>
                 &lt;p
                 <input type="text">
-                ="About W3Schools">W3Schools is a web developer's site.
+                ="About W4Schools">W4Schools is a web developer's site.
                 <span>&lt;</span>
                 <span>/p</span>
                 <span>></span>
               </p>
             </div>
-            <button class="w4-button">Submit Answer</button>
+            <button class="w4-button disabled">Submit Answer</button>
             <a href="">Start the Exercise</a>
           </div>
         </div>
@@ -153,34 +156,40 @@
       <div class="d-flex-column h-10">
         <p class="text-size-2">HTML Quiz Test</p>
         <p>Test your HTML skills with our HTML Quiz!</p>
-        <button class="w4-button-light-blue">Start HTML Quiz!</button>
+        <button class="w4-button-light-blue disabled">Start HTML Quiz!</button>
       </div>
 
       <hr/>
 
+      <!-- HTML References -->
       <div class="htmlHome-references-container">
         <p class="text-size-2">HTML References</p>
         <p>At W3Schools you will find complete references about HTML elements, attributes, events, color names, entities, character-sets, URL encoding, language codes, HTTP messages, browser support, and more:</p>
         <div class="d-flex-gird">
-          <button class="">HTML Elements</button>
-          <button class="">Browser Suppoet</button>
-          <button class="">Attributes</button>
-          <button class="">Global Attributes</button>
-          <button class="">Event Attributes</button>
-          <button class="">Color Names</button>
-          <button class="">Canvas</button>
-          <button class="">Audio/Vido DOM</button>
-          <button class="">Character Sets</button>
-          <button class="">URL Encoding</button>
-          <button class="">Language Codes</button>
-          <button class="">Country Codes</button>
-          <button class="">HTTP Messages</button>
-          <button class="">Px to Em Converter</button>
-          <button class="">Keyboard Shortcuts</button>
+          <button class="disabled">HTML Elements</button>
+          <button class="disabled">Browser Suppoet</button>
+          <button class="disabled">Attributes</button>
+          <button class="disabled">Global Attributes</button>
+          <button class="disabled">Event Attributes</button>
+          <button class="disabled">Color Names</button>
+          <button class="disabled">Canvas</button>
+          <button class="disabled">Audio/Vido DOM</button>
+          <button class="disabled">Character Sets</button>
+          <button class="disabled">URL Encoding</button>
+          <button class="disabled">Language Codes</button>
+          <button class="disabled">Country Codes</button>
+          <button class="disabled">HTTP Messages</button>
+          <button class="disabled">Px to Em Converter</button>
+          <button class="disabled">Keyboard Shortcuts</button>
         </div>
       </div>
 
       <hr/>
+
+      <div class="group-button-container container">
+        <button class="w4-btn" v-on:click='handleRouteTo("/")'>&lt;Home</button>
+        <button class="w4-btn" v-on:click='handleRouteTo("/html/introduction")'>Next ></button>  
+      </div>
     </section>
   </div>
 </template>
@@ -221,18 +230,12 @@ export default HtmlHomeContent
 </script>
 
 <style>
-
+@import url(./shareStyle/shareStyle.css);
 
 .htmlHome-container {
   display: grid;
   grid-template-columns: 14rem 1fr 14rem;
   font-size: 1.1rem;
-
-}
-
-.group-button-container {
-  display: flex;
-  justify-content: space-between;
 }
 
 .htmlHome-central-container {
@@ -253,29 +256,6 @@ export default HtmlHomeContent
   height: 45px;
   width: 100px;
   font-size: 1.2rem;
-  background-color: #4CAF50;
-  border: none;
-  cursor: pointer;
-  color: white;
-  outline: none;
-}
-
-
-.w4-info {
-  background-color: #d4edda;
-  height: 14rem;
-  display: flex;
-  padding: 1rem;
-  flex-direction: column;
-  justify-content: space-between;
-  margin-bottom: 1rem;
-  margin-top: 1rem;
-}
-
-.w4-info > button {
-  height: 40px;
-  width: 13vw;
-  font-size: 1rem;
   background-color: #4CAF50;
   border: none;
   cursor: pointer;
@@ -374,74 +354,14 @@ export default HtmlHomeContent
   width: 100%;
 }
 
-.d-flex-gird > button {
-  height: 60px;
-  cursor: pointer;
-  border: none;
-  outline: none;
-}
-
-.d-flex-gird > button:hover {
-  background-color: #555;
-  color: white;
-}
-
 .htmlHome-references-container {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   margin-bottom: 1rem;
   margin-top: 1rem;
-}
-
-
-
-
-
-
-
-
-
-
-.code-section-example-container {
   height: 30rem;
-  /* border: 1px solid gainsboro; */
-  border-left: 3px solid gainsboro;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  /* display: flex; */
 }
-
-.code-section-example-container:nth-child(even) {
-  background-color: #f1f1f1;
-  display: flex;
-  flex-direction: row-reverse;
-}
-
-.code-section-example-item-left-container {
-  /* border: 2px solid firebrick; */
-  height: 12rem;
-  width: 30rem;
-  /* text-align: center; */
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
-  /* margin: auto; */
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 1rem;
-}
-.code-section-example-item-left-container > h3 {
-  font-size: 5rem;
-}
-
-.code-section-example-item-left-container > p {
-  font-size: 1.5rem;
-}
-
-
-
 
 
 
@@ -490,4 +410,29 @@ export default HtmlHomeContent
   /* justify-content: space-around; */
 }
 
+@media only screen and (max-device-width: 480px) {
+  .htmlHome-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    font-size: 1.1rem;
+  }
+
+  .htmlHome-container > .sideLeft-container {
+    display: none;
+  }
+
+  .htmlHome-container >* .htmlHome-info-exercises-inner-item-container > .htmlHome-info-exerciser-inner-item-a  {
+    padding: 0px;
+  }
+}
+
+@media only screen and (max-device-width: 768px) {
+  .htmlHome-container {
+    display: grid;
+    grid-template-columns: 14rem 1fr;
+  }
+  .htmlHome-container >* .htmlHome-info-exercises-inner-item-container > .htmlHome-info-exerciser-inner-item-a  {
+    padding: 0px;
+  }
+}
 </style>

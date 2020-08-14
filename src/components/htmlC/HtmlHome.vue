@@ -8,8 +8,8 @@
       <router-view></router-view>
 
         <!-- RIGHT SIDE AD SECTION -->
-      <div style="border: 1px solid red">
-        <p>AD placeholder</p>
+      <div style="border: 1px solid #d4edda">
+        <!-- <p>AD placeholder</p> -->
       </div>
     </div>
   </div>
@@ -48,6 +48,11 @@ export default HtmlHome
 </script>
 
 <style>
-
+/* .main-routes-view {
+  position: relative;
+  left: 14rem;
+  width: 80rem;
+  top: 110px;
+} */
 
 </style>

@@ -39,4 +39,15 @@ export default Navbar
   padding: 1rem;
   justify-content: space-between;
 }
+
+
+@media only screen and (max-device-width: 480px) {
+  #navbar-container > ul > li:nth-child(2) {
+     display: none;
+  }
+  #navbar-container > ul > li:nth-child(1) {
+    margin: auto;
+    font-size: 2rem;
+  }
+}
 </style>

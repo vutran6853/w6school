@@ -1,0 +1,31 @@
+.code-section-example-container {
+  height: 30rem;
+  border-left: 3px solid gainsboro;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.code-section-example-container:nth-child(even) {
+  background-color: #f1f1f1;
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.code-section-example-item-left-container {
+  height: 12rem;
+  width: 30rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 1rem;
+}
+.code-section-example-item-left-container > h3 {
+  font-size: 5rem;
+}
+
+.code-section-example-item-left-container > p {
+  font-size: 1.5rem;
+}
