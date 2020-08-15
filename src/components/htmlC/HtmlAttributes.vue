@@ -64,7 +64,8 @@
       </div>
         <p class="p-1">
           You will learn more about links in our
-          <a href="">HTML Links chapter.</a>
+          <!-- <a href="">HTML Links chapter.</a> -->
+          <router-link to="/">HTML Links chapter.</router-link>
         </p>
     </section>
 
@@ -191,7 +192,9 @@
       </div>
         <p class="p-1">
           You will learn more about links in our
-          <a href="">HTML Links chapter.</a>
+          <!-- <a href="">HTML Links chapter.</a> -->
+          <router-link to="/">HTML Links chapter.</router-link>
+
         </p>
     </section>
 
@@ -234,7 +237,8 @@
       </div>
         <p class="p-1">
           You will learn more about styles in our
-          <a href="">HTML Styles chapter.</a>
+          <!-- <a href="">HTML Styles chapter.</a> -->
+          <router-link to="/">HTML Styles chapter.</router-link>
         </p>
     </section>
     
@@ -345,7 +349,8 @@
       </div>
       <p class="p-1">
         You can see all the language codes in our
-        <a href="">HTML Language Code Reference.</a>
+        <!-- <a href="">HTML Language Code Reference.</a> -->
+        <router-link to="/">HTML Language Code Reference.</router-link>
       </p>
     </section>
 
@@ -541,7 +546,9 @@
           <p>
           <strong>Note:</strong>
           A complete list of all attributes for each HTML element, is listed in our:
-          <a href="">HTML Attribute Reference.</a>
+          <!-- <a href="">HTML Attribute Reference.</a> -->
+          <router-link to="/">HTML Attribute Reference.</router-link>
+
         </p>
       </div>
     </section>

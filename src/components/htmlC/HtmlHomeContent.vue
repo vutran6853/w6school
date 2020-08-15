@@ -114,7 +114,9 @@
       <div class="d-flex-column h-10">
         <p class="text-size-2">HTML Examples</p>
         <p style="">In this HTML tutorial, you will find more than 200 examples. With our online "Try it Yourself" editor, you can edit and test each example yourself!</p>
-        <a href="">Go to HTML Examples!</a>
+        <!-- <a href="">Go to HTML Examples!</a> -->
+        <router-link to="/">Go to HTML Examples!</router-link>
+
       </div>
 
       <hr/>
@@ -145,7 +147,8 @@
               </p>
             </div>
             <button class="w6-button disabled">Submit Answer</button>
-            <a href="">Start the Exercise</a>
+            <!-- <a href="">Start the Exercise</a> -->
+            <router-link to="/">Start the Exercise</router-link>
           </div>
         </div>
 

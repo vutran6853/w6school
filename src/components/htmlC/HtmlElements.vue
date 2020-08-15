@@ -339,7 +339,9 @@
           <p>
           <strong>Note:</strong>
           For a complete list of all available HTML tags, visit our
-          <a href="">HTML Tag Reference.</a>
+          <!-- <a href="">HTML Tag Reference.</a> -->
+          <router-link to="/">HTML Tag Reference.</router-link>
+
         </p>
         </div>
       </div>
