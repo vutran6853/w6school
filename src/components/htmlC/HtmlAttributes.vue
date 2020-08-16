@@ -19,7 +19,7 @@
     <hr/>
     
     <!-- HTML Attributes -->
-    <section class="container h-10">
+    <section class="container">
       <p class="text-size-2">HTML Attributes</p>
       <ul title="list">
         <li>All HTML elements can have <strong>attributes</strong></li>
@@ -143,7 +143,7 @@
 
     <!-- The alt Attribute -->
     <section>
-      <div class="d-flex-column h-6">
+      <div class="d-flex-column">
         <p class="text-size-2">The alt Attribute</p>
         <p>
           The required 
@@ -299,7 +299,7 @@
 
         </div>
       </div>
-      <div class="d-flex-column h-5 p-1">
+      <div class="d-flex-column p-1">
         <p>
           Country codes can also be added to the language code in the
           <span class="w6-codespan">&lt;lang&gt;</span>
@@ -695,6 +695,11 @@ export default HtmlAttributes
   }
   #htmlAttributes > section > div.code-example-container > .code-example-inner-container {
     font-size: 0.8rem;
+  }
+}
+@media only screen and (max-width: 768px) and (min-width: 481px) {
+  #htmlAttributes > section > div[class='d-flex-column h-6'] {
+    background-color: yellow;
   }
 }
 </style>

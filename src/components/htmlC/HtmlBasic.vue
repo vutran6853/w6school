@@ -323,12 +323,22 @@ export default HtmlBasic
     font-size: 0.8rem;
   }
 }
-@media (max-width: 768px) and (min-width: 481px) {
+/* @media (max-width: 768px) and (min-width: 481px) and (orientation: landscape) {
    #htmlBasic {
+    width: 408px
+  }
+
+  #htmlBasic > div.code-example-container > .code-example-inner-container {
+    font-size: 0.8rem;
+  }
+} */
+@media only screen and (max-width: 768px) and (min-width: 481px) {
+  #htmlBasic {
     width: 509px;
   }
   #htmlBasic > div.code-example-container > .code-example-inner-container {
     font-size: 0.8rem;
   }
 }
+
 </style>

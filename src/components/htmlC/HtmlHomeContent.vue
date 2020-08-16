@@ -413,7 +413,7 @@ export default HtmlHomeContent
   /* justify-content: space-around; */
 }
 
-@media only screen and (max-device-width: 480px) {
+@media only screen and (max-width: 480px) {
   .htmlHome-container {
     display: grid;
     grid-template-columns: 1fr;
@@ -428,7 +428,8 @@ export default HtmlHomeContent
     padding: 0px;
   }
 }
-@media (max-width: 768px) and (min-width: 481px) {
+
+@media(max-width: 768px) and (min-width: 480px) and (orientation: landscape) {
   .htmlHome-container {
     display: grid;
     grid-template-columns: 14rem 1fr;
@@ -436,7 +437,16 @@ export default HtmlHomeContent
   .htmlHome-container >* .htmlHome-info-exercises-inner-item-container > .htmlHome-info-exerciser-inner-item-a  {
     padding: 0px;
   }
-
 }
+
+/* @media (max-width: 768px) and (min-width: 481px) {
+  .htmlHome-container {
+    display: grid;
+    grid-template-columns: 14rem 1fr;
+  }
+  .htmlHome-container >* .htmlHome-info-exercises-inner-item-container > .htmlHome-info-exerciser-inner-item-a  {
+    padding: 0px;
+  }
+} */
 
 </style>
