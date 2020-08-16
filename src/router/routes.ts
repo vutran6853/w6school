@@ -22,7 +22,7 @@ Vue.use(VueRouter)
   {
     path: '/html',
     name: 'HTML',
-    components: {}, 
+    component: HtmlHome, 
     children: [
       { path: '/html', component: HtmlHomeContent },
       { path: '/html/introduction', component: HtmlIntroduction },
