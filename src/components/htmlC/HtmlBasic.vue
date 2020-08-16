@@ -320,17 +320,14 @@ export default HtmlBasic
   }
 
   #htmlBasic > div.code-example-container > .code-example-inner-container {
-    /* background-color: yellow; */
     font-size: 0.8rem;
   }
 }
-
-@media only screen and (max-device-width: 768px) {
-  #htmlBasic {
+@media (max-width: 768px) and (min-width: 481px) {
+   #htmlBasic {
     width: 509px;
   }
   #htmlBasic > div.code-example-container > .code-example-inner-container {
-    /* background-color: yellow; */
     font-size: 0.8rem;
   }
 }

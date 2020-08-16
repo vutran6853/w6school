@@ -428,8 +428,7 @@ export default HtmlHomeContent
     padding: 0px;
   }
 }
-
-@media only screen and (max-device-width: 768px) {
+@media (max-width: 768px) and (min-width: 481px) {
   .htmlHome-container {
     display: grid;
     grid-template-columns: 14rem 1fr;
@@ -437,5 +436,7 @@ export default HtmlHomeContent
   .htmlHome-container >* .htmlHome-info-exercises-inner-item-container > .htmlHome-info-exerciser-inner-item-a  {
     padding: 0px;
   }
+
 }
+
 </style>
