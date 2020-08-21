@@ -6,7 +6,7 @@
       <ul class="disabled">
         <li v-for='(value) in navbarItemGroup1.items' 
           v-bind:key='value.id'
-          v-on:click='handleShowInfo(value.id)'
+          v-on:click='handleRouteTo(value.id)'
           >{{ value.name }}</li>
       </ul>
 
@@ -22,7 +22,7 @@
         <li v-for='(value) in navbarItemGroup2.items' 
           v-bind:key='value.id'
           v-bind:class='value.isHover ? "active" : "" '
-          v-on:click='handleShowInfo(value.id)'
+          v-on:click='handleRouteTo(value)'
           >{{ value.name }}</li>
       </ul>
 
@@ -117,7 +117,7 @@
 
 <script lang="ts">
 import Vue from 'vue'
-import { getter } from '../../store/store'
+import { getter, action } from '../../store/store'
 
 type TnavbarItemGroup1 = {
   id: number,
@@ -174,15 +174,15 @@ const NavbarItems = Vue.extend({
     }
   },
   methods: {
-    handleShowInfo(id: number) {
-      // this.state.navbarItemGroup1.items.filter((value: TnavbarItemGroup1) => {
-      //   if (value.id === id) {
-      //     value.isShowInfo = true
-      //   } else {
-      //     value.isShowInfo = false
-      //   }
-      //   return value
-      // })
+
+    /** 
+     * * Will route to right tab and update vuex
+    **/
+    handleRouteTo(valueObj: TnavbarItemGroup2) {
+      this.$store.dispatch(action.setNavbarItemsBySelected, valueObj.id)
+      this.$router.push({
+        path: `/${valueObj.name.toLowerCase()}`
+      })
     },
     handleScroll() {
       if (window.scrollY < 100) {
@@ -192,12 +192,7 @@ const NavbarItems = Vue.extend({
         // this.handleRemoveScrollEffect()
       }
       return null
-    },
-    // handleRouteTo(passUrl: string) {
-    //   this.$router.push({
-    //     path: passUrl
-    //   })
-    // }
+    }
   }
 })
 

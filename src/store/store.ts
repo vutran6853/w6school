@@ -35,13 +35,17 @@ const getter = {
 }
 
 const action = {
-  setNavbarItemsGroup1ToHTML: 'setNavbarItemsGroup1ToHTML',
+  setNavbarItemsToHTML: 'setNavbarItemsToHTML',
+  setNavbarItemsToCSS: 'setNavbarItemsToCSS',
+  setNavbarItemsBySelected: 'setNavbarItemsBySelected',
   setNavbarItemsToDefault: 'setNavbarItemsToDefault'
 }
 
-const type = {
+const types = {
   SET_AT_HTML_VIEW: 'SET_AT_HTML_VIEW',
-  SET_AT_DEFAULT_VIEW: 'SET_AT_DEFAULT_VIEW'
+  SET_AT_CSS_VIEW: 'SET_AT_CSS_VIEW',
+  SET_AT_DEFAULT_VIEW: 'SET_AT_DEFAULT_VIEW',
+  SET_NAVBAR_ITEMS_BY_SELECED: 'SET_NAVBAR_ITEMS_BY_SELECED'
 }
 
 const state: IStoreState = {
@@ -58,7 +62,7 @@ const state: IStoreState = {
      isTrue: false,
      items: [
       { id: 0, name: 'HTML', isHover: false, isShowInfo: false },
-      // { id: 1, name: 'CSS', isHover: false, isShowInfo: false },
+      { id: 1, name: 'CSS', isHover: false, isShowInfo: false },
       // { id: 2, name: 'JAVASCRIPT', isHover: false, isShowInfo: false },
       // { id: 3, name: 'SQL', isHover: false, isShowInfo: false },
       // { id: 4, name: 'PYTHON', isHover: false, isShowInfo: false },
@@ -78,25 +82,49 @@ const getters: GetterTree<IStoreState, any> = {
 
 const actions: ActionTree<IStoreState, any> = {
   setNavbarItemsToHTML() {
-    this.commit(type.SET_AT_HTML_VIEW)
+    this.commit(types.SET_AT_HTML_VIEW)
   },
   setNavbarItemsToDefault() {
-    this.commit(type.SET_AT_DEFAULT_VIEW)
+    this.commit(types.SET_AT_DEFAULT_VIEW)
   },
-  
+  setNavbarItemsToCSS() {
+    this.commit(types.SET_AT_CSS_VIEW)
+  },
+  setNavbarItemsBySelected({}, payload) {
+    this.commit(types.SET_NAVBAR_ITEMS_BY_SELECED, payload)
+  }
 }
 
 const mutations: MutationTree<IStoreState> = {
-  [type.SET_AT_HTML_VIEW](state) {
+  [types.SET_AT_HTML_VIEW](state) {
     state.navbarItemGroup1.isTrue = false
     state.navbarItemGroup2.isTrue = true
     state.navbarItemGroup2.items[0].isHover = true
   },
-  [type.SET_AT_DEFAULT_VIEW](state) {
+  [types.SET_AT_CSS_VIEW](state) {
+    state.navbarItemGroup1.isTrue = false
+    state.navbarItemGroup2.isTrue = true
+    state.navbarItemGroup2.items[1].isHover = true
+  },
+  [types.SET_AT_DEFAULT_VIEW](state) {
     state.navbarItemGroup1.isTrue = true
     state.navbarItemGroup1.items[0].isShowInfo = false
     state.navbarItemGroup2.isTrue = false
-  } 
+    state.navbarItemGroup2.items = state.navbarItemGroup2.items.map((value) => {
+      value.isHover = false
+      return value
+    })
+  },
+  [types.SET_NAVBAR_ITEMS_BY_SELECED](stae, payload) {
+    state.navbarItemGroup2.items = state.navbarItemGroup2.items.map((value) => {
+      if (value.id === payload) {
+        value.isHover = true
+      } else {
+        value.isHover = false
+      }
+      return value
+    })
+  }
 }
 
 const store = new Vuex.Store({
@@ -114,7 +142,7 @@ export default store
 export {
   getter,
   action,
-  type,
+  types,
   IStoreState
 }
 

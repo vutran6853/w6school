@@ -20,6 +20,7 @@ import Vue from 'vue'
 import HtmlHomeSideLeft from './HtmlHomeSideLeft.vue'
 import Navbar from '../navbar/Navbar.vue'
 import NavbarItems from '../navbarItems/NavbarItems.vue'
+import { action } from '@/store/store'
 
 const HtmlHome = Vue.extend({
   name: 'HtmlHome',
@@ -29,7 +30,7 @@ const HtmlHome = Vue.extend({
     HtmlHomeSideLeft
   },
   created() {
-    this.$store.dispatch('setNavbarItemsToHTML')
+    this.$store.dispatch(action.setNavbarItemsToHTML)
   },
   updated() {
 
@@ -38,9 +39,6 @@ const HtmlHome = Vue.extend({
       document.body.scrollTop = 0
       document.documentElement.scrollTop = 0
     }
-  },
-  methods: {
-    
   }
 })
 

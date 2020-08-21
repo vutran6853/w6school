@@ -7,7 +7,7 @@
         <button class="w6-btn" v-on:click='handleRouteTo("/html/introduction")'>Next ></button>  
       </div>
 
-      <div class="w6-info">
+      <div class="w6-info h-14">
         <p>HTML is the standard markup language for Web pages.</p>
         <p>With HTML you can create your own Website.</p>
         <p>This tutorial follows the latest HTML5 standard.</p>

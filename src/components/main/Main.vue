@@ -8,7 +8,7 @@
         <div class="main-side-items-container">
           <h3>HTML and CSS</h3>
           <p class="available" v-on:click='handleRouteTo("/html")'>Learn HTML</p>
-          <p>Learn CSS</p>
+          <p class="available" v-on:click='handleRouteTo("/css")'>Learn CSS</p>
           <p>Learn Bootstrap</p>
           <p>Learn w6.CSS</p>
           <p>Learn Colors</p>
@@ -70,7 +70,7 @@
             <p>The language for building web pages</p>
             <div class="code-section-example-item-left-group-button">
               <button class="w6-button-grey" v-on:click='handleRouteTo("html")'>LEARN HTML</button>
-              <button class="w6-button-grey disabled">HTML REFERENCE</button>  
+              <!-- <button class="w6-button-grey disabled">HTML REFERENCE</button>   -->
             </div>
           </div>
 
@@ -156,8 +156,8 @@
             <h3>CSS</h3>
             <p>The language for styling web pages</p>
             <div class="code-section-example-item-left-group-button">
-              <button class="w6-button-grey disabled">LEARN CSS</button>
-              <button class="w6-button-grey disabled">CSS REFERENCE</button>  
+              <button class="w6-button-grey" v-on:click='handleRouteTo("css")'>LEARN CSS</button>
+              <!-- <button class="w6-button-grey disabled">CSS REFERENCE</button>   -->
             </div>
           </div>
 
@@ -351,6 +351,7 @@ const Main = Vue.extend({
   },
   created() {
     this.$store.dispatch(action.setNavbarItemsToDefault)
+    this.$store.dispatch("getPosts")
   },
   mounted() {
     // console.log('window.innerHeight', window.innerHeight)
@@ -361,6 +362,9 @@ const Main = Vue.extend({
       this.$router.push({
         path: urlPath
       })
+    },
+    getList(): void {
+      
     }
   }
 })

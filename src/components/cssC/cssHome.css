@@ -1,0 +1,37 @@
+
+.cssHome-container {
+  display: grid;
+  grid-template-columns: 14rem 1fr 14rem;
+  font-size: 1.1rem;
+}
+
+.cssHome-container >* hr {
+  border-top: 1px solid #eee;
+}
+
+
+@media only screen and (max-width: 480px) {
+  .cssHome-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    font-size: 1.1rem;
+  }
+
+  .cssHome-container > .sideLeft-container {
+    display: none;
+  }
+
+  .cssHome-container >* .cssHome-info-exercises-inner-item-container > .cssHome-info-exerciser-inner-item-a  {
+    padding: 0px;
+  }
+}
+
+@media(max-width: 768px) and (min-width: 480px) and (orientation: landscape) {
+  .cssHome-container {
+    display: grid;
+    grid-template-columns: 14rem 1fr;
+  }
+  .cssHome-container >* .cssHome-info-exercises-inner-item-container > .cssHome-info-exerciser-inner-item-a  {
+    padding: 0px;
+  }
+}

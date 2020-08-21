@@ -81,8 +81,14 @@ export default {
 .h-13 {
   height: 13rem;
 }
+.h-14 {
+  height: 14rem;
+}
 .h-15 {
   height: 15rem;
+}
+.h-16 {
+  height: 16rem;
 }
 .h-17 {
   height: 17rem;
@@ -274,7 +280,6 @@ export default {
 
 .w6-info {
   background-color: #d4edda;
-  height: 14rem;
   display: flex;
   padding: 1rem;
   flex-direction: column;

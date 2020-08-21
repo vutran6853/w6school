@@ -125,12 +125,8 @@ export default HtmlHomeSideLeft
 
 <style>
 .sideLeft-container {
-  /* position: fixed; */
-  /* top: 110px; */
-  background-color: transparent;
   padding-left: 1rem;
   background-color: #f1f1f1;
-  /* width: 13rem; */
 }
 
 .sideLeft-container > .sideLeft-mini-menu > h3 {
