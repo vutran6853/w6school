@@ -2,13 +2,15 @@
   <div id="navbarItems" class="navbarItems-container" v-on:scroll.passive='handleScroll' v-bind:class='state.navbarItemsClassStatus'  >
 
     <div class="navbarItems-group-items-1 " v-if='navbarItemGroup1.isTrue'>
+      
+      <!-- TODO: KEEP THIS CODE BELOW FOR LATER -->
 
-      <ul class="disabled">
+      <!-- <ul class="disabled">
         <li v-for='(value) in navbarItemGroup1.items' 
           v-bind:key='value.id'
           v-on:click='handleRouteTo(value.id)'
           >{{ value.name }}</li>
-      </ul>
+      </ul> -->
 
       <!-- <div>
         <p>toggleIron</p>

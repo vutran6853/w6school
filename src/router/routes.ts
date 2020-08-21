@@ -12,6 +12,7 @@ import HTMLTryIt from '../components/htmlC/HTMLTryIt.vue'
 
 import CssHome from '../components/cssC/CssHome'
 import CssHomeContent from '../components/cssC/CssHomeContent.vue'
+import CssIntroduction from '../components/cssC/CssIntroduction.vue'
 
 Vue.use(VueRouter)
 
@@ -39,7 +40,8 @@ Vue.use(VueRouter)
     name: 'CSS',
     component: CssHome, 
     children: [
-      { path: '/css', component: CssHomeContent }
+      { path: '/css', component: CssHomeContent },
+      { path: '/css/introduction', component: CssIntroduction }
     ]
   },
   {
