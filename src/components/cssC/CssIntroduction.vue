@@ -23,6 +23,32 @@
 
     <hr/>
 
+    
+    <!-- Why Use CSS? -->
+    <div class="d-flex-column">
+      <div class="d-flex-column h-6 w-100">
+        <p class="text-size-2">Why Use CSS?</p>
+        <p>CSS is used to define styles for your web pages, including the design, layout and variations in display for different devices and screen sizes.</p>
+      </div>
+      <div class="w-100">
+        <CSSExample />
+      </div>
+    </div>
+
+    <hr/>
+
+    <!-- CSS Solved a Big Problem -->
+    <div class="d-flex-column h-25">
+      <p class="text-size-2">CSS Solved a Big Problem</p>
+      <p>HTML was NEVER intended to contain tags for formatting a web page!</p>
+      <p>HTML was created to <strong>describe the content</strong> of a web page, like:</p>
+      <p><span class="w6-codespan">&lt;h1&gt;</span>This is a heading<span class="w6-codespan">&lt;/h1&gt;</span></p>
+      <p><span class="w6-codespan">&lt;p&gt;</span>This is a paragraph.<span class="w6-codespan">&lt;/p&gt;</span></p>
+      <p>When tags like <span class="w6-codespan">&lt;font&gt;</span>, and color attributes were added to the HTML 3.2 specification, it started a nightmare for web developers. Development of large websites, where fonts and color information were added to every single page, became a long and expensive process.</p>
+      <p>To solve this problem, the World Wide Web Consortium (W3C) created CSS.</p>
+      <p>CSS removed the style formatting from the HTML page!</p>
+    </div>
+
     <div class="note-container container">
       <p>
         <strong>Note:</strong>
@@ -31,6 +57,7 @@
     </div>
 
     <hr/>
+
 
     <!-- CSS Saves a Lot of Work! -->
     <div class="d-flex-column h-8">
@@ -55,7 +82,7 @@
 
 <script lang="ts">
 import Vue from 'vue'
-// import ElementUI from './shareUI/ElementUI.vue'
+import CSSExample from './shareUI/CSSExample'
 
 const CssIntroduction = Vue.extend({
   name: 'CssIntroduction',
@@ -65,9 +92,9 @@ const CssIntroduction = Vue.extend({
       }
     }
   },
-  // components: {
-  //   ElementUI
-  // },
+  components: {
+    CSSExample
+  },
 
   methods: {
     // handleRouteToTryIt() {
@@ -79,13 +106,6 @@ const CssIntroduction = Vue.extend({
       this.$router.push({
         path: urlPath
       })
-    }
-  },
-  watch: {
-    $route(to, from) {
-      // react to route changes...
-      console.log({to, from})
-      
     }
   }
 })

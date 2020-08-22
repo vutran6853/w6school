@@ -22,60 +22,7 @@
         <p>This CSS tutorial contains hundreds of CSS examples.</p>
         <p>With our online editor, you can edit the CSS, and click on a button to view the result.</p>
       </div>
-      <div class="cssHome-section-example-item-right-container">
-        <p>CSS Example</p>
-        <div class="code-example-inner-container h-18">
-         <div>
-            <span class="color-brown">body</span>
-            <span class="color-brown"> {</span>
-            <br />
-
-            <span class="color-red pl"> background-color: </span>
-            <span class="color-mediumblue">lightblue</span>
-            <span class="color-black">;</span>
-            <br />
-            <span class="color-brown"> }</span>
-            <br />
-            <br />
-
-            <span class="color-brown">h1 </span>
-            <span class="color-brown"> {</span>
-            <br />
-
-            <span class="color-red pl"> color: </span>
-            <span class="color-mediumblue"> lightblue</span>
-            <span class="color-black">;</span>
-
-            <br />
-
-            <span class="color-red pl"> text-align: </span>
-            <span class="color-mediumblue"> lightblue</span>
-            <span class="color-black">;</span>
-            <br />
-            <span class="color-brown"> }</span>
-            <br />
-            <br />
-
-            <span class="color-brown">p </span>
-            <span class="color-brown"> {</span>
-            <br />
-
-            <span class="color-red pl"> font-family: </span>
-            <span class="color-mediumblue"> verdana</span>
-            <span class="color-black">;</span>
-            <br />
-
-            <span class="color-red pl">font-size: </span>
-            <span class="color-mediumblue">20px</span>
-            <span class="color-black">;</span>
-
-            <br />
-            <span class="color-brown"> }</span>
-            <br />
-          </div>
-        </div>
-        <button class="w6-button disabled">Try it Yourself</button>
-      </div>
+      <CSSExample />
       <h4 class="container">Click on the "Try it Yourself" button to see how it works.</h4>
       <hr/>
     </div>
@@ -91,7 +38,7 @@
     <hr/>
 
     <!-- Use the Menu -->
-    <div class="d-flex-column h-8">
+    <div class="d-flex-column h-10">
       <p class="text-size-2">Use the Menu</p>
       <p>We recommend reading this tutorial, in the sequence listed in the menu.</p>
       <p>If you have a large screen, the menu will always be present on the left.</p>
@@ -132,16 +79,20 @@
 
     <div class="group-button-container container">
       <button class="w6-btn" v-on:click='handleRouteTo("/")'>&lt;Home</button>
-      <button class="w6-btn" v-on:click='handleRouteTo("/html/introduction")'>Next ></button>  
+      <button class="w6-btn" v-on:click='handleRouteTo("/css/introduction")'>Next ></button>  
     </div>
   </section>
 </template>
 
 <script lang="ts">
 import Vue from 'vue'
+import CSSExample from './shareUI/CSSExample'
 
 const CssHomeContent = Vue.extend({
   name: 'CssHomeContent',
+  components: {
+    CSSExample
+  },
   methods: {
     handleRouteTo(urlPath: string) {
       this.$router.push({
@@ -203,7 +154,7 @@ export default CssHomeContent
   margin-top: 1rem;
 }
 
-.cssHome-section-example-item-right-container {
+/* .cssHome-section-example-item-right-container {
   background-color: #f1f1f1;
   height: 25rem;
   font-size: 1.5rem;
@@ -211,7 +162,7 @@ export default CssHomeContent
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-}
+} */
 
 
 .ad-placeholder {
