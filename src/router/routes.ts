@@ -14,6 +14,11 @@ import CssHome from '../components/cssC/CssHome'
 import CssHomeContent from '../components/cssC/CssHomeContent.vue'
 import CssIntroduction from '../components/cssC/CssIntroduction.vue'
 
+import JavascriptHome from '../components/javascriptC/JavascriptHome'
+import JavascriptHomeContent from '../components/javascriptC/JavascriptHomeContent.vue'
+import JavascriptIntroduction from '../components/javascriptC/JavascriptIntroduction.vue'
+
+
 Vue.use(VueRouter)
 
   const routes: Array<RouteConfig> = [
@@ -42,6 +47,15 @@ Vue.use(VueRouter)
     children: [
       { path: '/css', component: CssHomeContent },
       { path: '/css/introduction', component: CssIntroduction }
+    ]
+  },
+  {
+    path: '/javascript',
+    name: 'Javascript',
+    component: JavascriptHome, 
+    children: [
+      { path: '/javascript', component: JavascriptHomeContent },
+      { path: '/javascript/introduction', component: JavascriptIntroduction }
     ]
   },
   {

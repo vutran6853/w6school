@@ -37,6 +37,7 @@ const getter = {
 const action = {
   setNavbarItemsToHTML: 'setNavbarItemsToHTML',
   setNavbarItemsToCSS: 'setNavbarItemsToCSS',
+  setNavbarItemsToJavascript: 'setNavbarItemsToJavascript',
   setNavbarItemsBySelected: 'setNavbarItemsBySelected',
   setNavbarItemsToDefault: 'setNavbarItemsToDefault'
 }
@@ -44,6 +45,7 @@ const action = {
 const types = {
   SET_AT_HTML_VIEW: 'SET_AT_HTML_VIEW',
   SET_AT_CSS_VIEW: 'SET_AT_CSS_VIEW',
+  SET_AT_JAVASCRIPT_VIEW: 'SET_AT_JAVASCRIPT_VIEW',
   SET_AT_DEFAULT_VIEW: 'SET_AT_DEFAULT_VIEW',
   SET_NAVBAR_ITEMS_BY_SELECED: 'SET_NAVBAR_ITEMS_BY_SELECED'
 }
@@ -63,7 +65,7 @@ const state: IStoreState = {
      items: [
       { id: 0, name: 'HTML', isHover: false, isShowInfo: false },
       { id: 1, name: 'CSS', isHover: false, isShowInfo: false },
-      // { id: 2, name: 'JAVASCRIPT', isHover: false, isShowInfo: false },
+      { id: 2, name: 'JAVASCRIPT', isHover: false, isShowInfo: false },
       // { id: 3, name: 'SQL', isHover: false, isShowInfo: false },
       // { id: 4, name: 'PYTHON', isHover: false, isShowInfo: false },
       // { id: 5, name: 'MORE', isHover: false, isShowInfo: false }
@@ -92,6 +94,9 @@ const actions: ActionTree<IStoreState, any> = {
   },
   setNavbarItemsBySelected({}, payload) {
     this.commit(types.SET_NAVBAR_ITEMS_BY_SELECED, payload)
+  },
+  setNavbarItemsToJavascript() {
+    this.commit(types.SET_AT_JAVASCRIPT_VIEW)
   }
 }
 
@@ -106,6 +111,11 @@ const mutations: MutationTree<IStoreState> = {
     state.navbarItemGroup2.isTrue = true
     state.navbarItemGroup2.items[1].isHover = true
   },
+  [types.SET_AT_JAVASCRIPT_VIEW](state) {
+    state.navbarItemGroup1.isTrue = false
+    state.navbarItemGroup2.isTrue = true
+    state.navbarItemGroup2.items[2].isHover = true
+  },
   [types.SET_AT_DEFAULT_VIEW](state) {
     state.navbarItemGroup1.isTrue = true
     state.navbarItemGroup1.items[0].isShowInfo = false
@@ -115,7 +125,7 @@ const mutations: MutationTree<IStoreState> = {
       return value
     })
   },
-  [types.SET_NAVBAR_ITEMS_BY_SELECED](stae, payload) {
+  [types.SET_NAVBAR_ITEMS_BY_SELECED](state, payload) {
     state.navbarItemGroup2.items = state.navbarItemGroup2.items.map((value) => {
       if (value.id === payload) {
         value.isHover = true

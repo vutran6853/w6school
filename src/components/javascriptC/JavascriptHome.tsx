@@ -1,5 +1,5 @@
 import Vue,  { VNode } from 'vue'
-import JavscriptHomeSideLeft from './JavscriptHomeSideLeft.vue'
+import JavasciptHomeSideLeft from './JavasciptHomeSideLeft.vue'
 import Navbar from '../navbar/Navbar.vue'
 import NavbarItems from '../navbarItems/NavbarItems.vue'
 
@@ -8,7 +8,7 @@ import './javascriptHome.css'
 const JavscriptHome = Vue.extend({
   name: 'JavscriptHome',
   created() {
-    // this.$store.dispatch('setNavbarItemsToJavascript')
+    this.$store.dispatch('setNavbarItemsToJavascript')
   },
   updated() {
 
@@ -24,8 +24,8 @@ const JavscriptHome = Vue.extend({
         <Navbar />
         <NavbarItems />
         <div class="javascriptHome-container">
-          <JavscriptHomeSideLeft />
-          {/* <router-view/> */}
+          <JavasciptHomeSideLeft />
+          <router-view/>
 
           {/* RIGHT SIDE AD SECTION */}
           <div style="border: 1px solid #d4edda">

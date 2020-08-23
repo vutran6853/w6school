@@ -1,7 +1,7 @@
 <template>
   <div class="sideLeft-container">
     <div class="sideLeft-mini-menu">
-      <h3>CSS Tutorial</h3>
+      <h3>JS Tutorial</h3>
       <p v-for='value in state.groupItem1' 
         v-bind:key='value.id' 
         v-bind:class='value.isActive ? "active" : "" '
@@ -11,37 +11,33 @@
     </div>
 
     <div class="container sideLeft-mini-menu">
-      <h3>CSS Advanced</h3>
-      <p>CSS Rounded Corners</p>
-      <p>CSS Background</p>
-      <p>CSS Colors</p>
-      <p>CSS Gradients</p>
-      <p>CSS Shadows</p>
-      <p>CSS Text Effects</p>
+      <h3>JS Forms</h3>
+      <p>Forms API</p>
+      <p>Forms API</p>
     </div>
 
 
     <!-- <div class="container sideLeft-mini-menu">
-      <h3>CSS Graphics</h3>
-      <p>CSS Canvas</p>
-      <p>CSS SVG </p>
+      <h3>JS Graphics</h3>
+      <p>JS Canvas</p>
+      <p>JS SVG </p>
     </div> -->
 
 
     <!-- <div class="container sideLeft-mini-menu">
-      <h3>CSS Media</h3>
-      <p>CSS Media</p>
-      <p>CSS Video</p>
-      <p>CSS Audio</p>
+      <h3>JS Media</h3>
+      <p>JS Media</p>
+      <p>JS Video</p>
+      <p>JS Audio</p>
     </div> -->
 
     <!-- <div class="container sideLeft-mini-menu">
-      <h3>CSS APIs</h3>
-      <p>CSS Geolocation</p>
-      <p>CSS Drag/Drop</p>
-      <p>CSS Web Storage</p>
-      <p>CSS Web Workers</p>
-      <p>CSS SSE</p>
+      <h3>JS APIs</h3>
+      <p>JS Geolocation</p>
+      <p>JS Drag/Drop</p>
+      <p>JS Web Storage</p>
+      <p>JS Web Workers</p>
+      <p>JS SSE</p>
     </div> -->
   </div> 
 </template>
@@ -55,27 +51,27 @@ const JavasciptHomeSideLeft = Vue.extend({
     return {
       state: {
         groupItem1: [
-          { id: 0, text: 'CSS HOME', path: '/css', isActive: false },
-          { id: 1, text: 'CSS Introduction', path: '/css/introduction', isActive: false },
-          // { id: 2, text: 'CSS Editors', path: '/html/editors', isActive: false },
-          // { id: 3, text: 'CSS Basic', path: '/css/basic', isActive: false },
-          // { id: 4, text: 'CSS Elements', path: '/css/elements', isActive: false },
-          // { id: 5, text: 'CSS Attributes', path: '/css/attributes', isActive: false },
-          // { id: 6, text: 'CSS Headings', path: '/css/headings', isActive: false },
-          // { id: 7, text: 'CSS Paragraphs', path: '/css/paragraphs', isActive: false },
-          // { id: 8, text: 'CSS Styles', path: '/css/styles', isActive: false },
-          // { id: 9, text: 'CSS Formatting', path: '/css/formatting', isActive: false },
-          // { id: 10, text: 'CSS Quotation', path: '/css/quotation', isActive: false },
-          // { id: 11, text: 'CSS Comments', path: '/css/comments', isActive: false },
-          // { id: 12, text: 'CSS Colors', path: '/css/colors', isActive: false },
-          // { id: 13, text: 'CSS CSS', path: '/css/cSS', isActive: false },
-          // { id: 14, text: 'CSS Links', path: '/css/links', isActive: false },
-          // { id: 15, text: 'CSS Images', path: '/css/images', isActive: false },
-          // { id: 16, text: 'CSS Tables', path: '/css/tables', isActive: false },
-          // { id: 17, text: 'CSS Lists', path: '/css/lists', isActive: false },
-          // { id: 18, text: 'CSS Block', path: '/css/block', isActive: false },
-          // { id: 19, text: 'CSS Tables', path: '/css/tables', isActive: false },
-          // { id: 20, text: 'CSS Classes', path: '/css/classes', isActive: false }
+          { id: 0, text: 'JS HOME', path: '/javascript', isActive: false },
+          { id: 1, text: 'JS Introduction', path: '/javascript/introduction', isActive: false },
+          // { id: 2, text: 'JS Editors', path: '/html/editors', isActive: false },
+          // { id: 3, text: 'JS Basic', path: '/javascript/basic', isActive: false },
+          // { id: 4, text: 'JS Elements', path: '/javascript/elements', isActive: false },
+          // { id: 5, text: 'JS Attributes', path: '/javascript/attributes', isActive: false },
+          // { id: 6, text: 'JS Headings', path: '/javascript/headings', isActive: false },
+          // { id: 7, text: 'JS Paragraphs', path: '/javascript/paragraphs', isActive: false },
+          // { id: 8, text: 'JS Styles', path: '/javascript/styles', isActive: false },
+          // { id: 9, text: 'JS Formatting', path: '/javascript/formatting', isActive: false },
+          // { id: 10, text: 'JS Quotation', path: '/javascript/quotation', isActive: false },
+          // { id: 11, text: 'JS Comments', path: '/javascript/comments', isActive: false },
+          // { id: 12, text: 'JS Colors', path: '/javascript/colors', isActive: false },
+          // { id: 13, text: 'JS javascript', path: '/javascript/javascript', isActive: false },
+          // { id: 14, text: 'JS Links', path: '/javascript/links', isActive: false },
+          // { id: 15, text: 'JS Images', path: '/javascript/images', isActive: false },
+          // { id: 16, text: 'JS Tables', path: '/javascript/tables', isActive: false },
+          // { id: 17, text: 'JS Lists', path: '/javascript/lists', isActive: false },
+          // { id: 18, text: 'JS Block', path: '/javascript/block', isActive: false },
+          // { id: 19, text: 'JS Tables', path: '/javascript/tables', isActive: false },
+          // { id: 20, text: 'JS Classes', path: '/javascript/classes', isActive: false }
         ]
       }
     }

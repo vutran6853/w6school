@@ -230,8 +230,9 @@
             <h3>JavaScript</h3>
             <p>The language for programming web pages</p>
             <div class="code-section-example-item-left-group-button">
-              <button class="w6-button-grey disabled">LEARN JAVASCRIPT</button>
-              <button class="w6-button-grey disabled">JAVASCRIPT REFERENCE</button>  
+              <!-- <button class="w6-button-grey">LEARN JAVASCRIPT</button> -->
+              <button class="w6-button-grey" v-on:click='handleRouteTo("javascript")'>LEARN JAVASCRIPT</button>
+              <!-- <button class="w6-button-grey disabled">JAVASCRIPT REFERENCE</button>   -->
             </div>
           </div>
 

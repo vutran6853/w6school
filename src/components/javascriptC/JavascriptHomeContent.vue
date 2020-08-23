@@ -1,16 +1,17 @@
 <template>
   <section class="cssHome-central-container" style="border-left: 3px solid gainsboro;">
-    <p>CSS Tutorial</p>
+    <p>JavaScript Tutorial</p>
     <div class="group-button-container">
       <button class="w6-btn" v-on:click='handleRouteTo("/")'>&lt;Home</button>
-      <button class="w6-btn" v-on:click='handleRouteTo("/css/introduction")'>Next ></button>  
+      <button class="w6-btn" v-on:click='handleRouteTo("/javascript/introduction")'>Next ></button>  
     </div>
 
     <div class="w6-info h-10">
-      <p>CSS is the language we use to style an HTML document.</p>
-      <p>CSS describes how HTML elements should be displayed.</p>
-      <p>This tutorial will teach you CSS from basic to advanced.</p>
-      <button class="disabled">Start Learning CSS now >></button>
+      <p>JavaScript is the world's most popular programming language.</p>
+      <p>JavaScript is the programming language of the Web.</p>
+      <p>JavaScript is easy to learn.</p>
+      <p>This tutorial will teach you JavaScript from basic to advanced.</p>
+      <button class="disabled">Start Learning Javascript now >></button>
     </div>
 
     <hr/>
@@ -19,20 +20,11 @@
     <div class="cssHome-info-container">
       <div class="d-flex-column h-8">
         <p class="text-size-2">Examples in Each Chapter</p>
-        <p>This CSS tutorial contains hundreds of CSS examples.</p>
-        <p>With our online editor, you can edit the CSS, and click on a button to view the result.</p>
+        <p>With our "Try it Yourself" editor, you can edit the source code and view the result.</p>
       </div>
-      <CSSExample />
+      
       <h4 class="container">Click on the "Try it Yourself" button to see how it works.</h4>
       <hr/>
-    </div>
-
-    <!-- CSS Examples -->
-    <div class="d-flex-column h-8">
-      <p class="text-size-2">CSS Examples</p>
-      <p>Learn from over 300 examples! With our editor, you can edit the CSS, and click on a button to view the result.</p>
-      <!-- <a href="">Go to HTML Examples!</a> -->
-      <router-link to="/">Go to CSS Examples!</router-link>
     </div>
 
     <hr/>
@@ -49,9 +41,9 @@
 
     <!-- CSS Templates -->
     <div class="d-flex-column h-8">
-      <p class="text-size-2">CSS Templates</p>
-      <p>We have created some responsive W6.CSS templates for you to use.</p>
-      <p>You are free to modify, save, share, and use them in all your projects.</p>
+      <p class="text-size-2">Learn by Examples</p>
+      <p>Examples are better than 1000 words. Examples are often easier to understand than text explanations.</p>
+      <p>This tutorial supplements all explanations with clarifying "Try it Yourself" examples.</p>
     </div>
 
     <div class="ad-placeholder">
@@ -60,39 +52,33 @@
 
     <hr/>
 
-    <!-- CSS References -->
+    <!-- Why Study JavaScript? -->
     <div class="d-flex-column h-25">
-      <p class="text-size-2">CSS References</p>
-      <p>At W6Schools you will find complete CSS references of all properties and selectors with syntax, examples, browser support, and more.</p>
-      <router-link to="/">CSS Properties Reference</router-link>
-      <router-link to="/">CSS Selectors Reference</router-link>
-      <router-link to="/">CSS Functions Reference</router-link>
-      <router-link to="/">CSS Animatable Reference</router-link>
-      <router-link to="/">CSS Aural Reference</router-link>
-      <router-link to="/">CSS Units</router-link>
-      <router-link to="/">CSS Color Reference</router-link>
-      <router-link to="/">CSS Default Values</router-link>
-      <router-link to="/">CSS Browser Support</router-link>
+      <p class="text-size-2">Why Study JavaScript?</p>
+      <p>JavaScript is one of the <strong>3 languages</strong> all web developers <strong>must</strong> learn:</p>
+      <!-- <router-link to="/html" v-on:click='handleRouteTo("/html")'>HTML</router-link> -->
+      <!-- <router-link to="/css">CSS</router-link> -->
+
     </div>
 
     <hr/>
 
     <div class="group-button-container container">
       <button class="w6-btn" v-on:click='handleRouteTo("/")'>&lt;Home</button>
-      <button class="w6-btn" v-on:click='handleRouteTo("/css/introduction")'>Next ></button>  
+      <button class="w6-btn" v-on:click='handleRouteTo("/javascript/introduction")'>Next ></button>  
     </div>
   </section>
 </template>
 
 <script lang="ts">
 import Vue from 'vue'
-import CSSExample from './shareUI/CSSExample'
+// import CSSExample from './shareUI/CSSExample'
 
-const CssHomeContent = Vue.extend({
-  name: 'CssHomeContent',
-  components: {
-    CSSExample
-  },
+const JavascriptHomeContent = Vue.extend({
+  name: 'JavascriptHomeContent',
+  // components: {
+  //   CSSExample
+  // },
   methods: {
     handleRouteTo(urlPath: string) {
       this.$router.push({
@@ -102,7 +88,7 @@ const CssHomeContent = Vue.extend({
   }
 })
 
-export default CssHomeContent
+export default JavascriptHomeContent
 
 </script>
 
