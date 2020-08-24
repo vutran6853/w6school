@@ -1,22 +1,31 @@
 <template>
-  <div id="navbarItems" class="navbarItems-container" v-on:scroll.passive='handleScroll' v-bind:class='state.navbarItemsClassStatus'  >
-
+  <div id="navbarItems" class="navbarItems-container" v-on:scroll.passive='handleScroll' v-bind:class='state.navbarItemsClassStatus'>
     <div class="navbarItems-group-items-1 " v-if='navbarItemGroup1.isTrue'>
-      
-      <!-- TODO: KEEP THIS CODE BELOW FOR LATER -->
-
-      <!-- <ul class="disabled">
+      <ul>
         <li v-for='(value) in navbarItemGroup1.items' 
           v-bind:key='value.id'
-          v-on:click='handleRouteTo(value.id)'
+          v-on:click='handleToggleModel'
           >{{ value.name }}</li>
-      </ul> -->
+      </ul>
 
       <!-- <div>
         <p>toggleIron</p>
         <p>earth</p>
         <p>search</p>
       </div> -->
+    </div>
+
+    <div class="navbarItemGroup1-model-container p-1" v-if='state.isModel'>
+      <div class="container w-25 mr-1">
+        <h3 class="mb-1">HTML and CSS</h3>
+        <p v-on:click='handleRouteTo2("html")'>Learn HTML</p>
+        <p v-on:click='handleRouteTo2("css")'>Learn CSS</p>
+      </div>
+
+      <div class="container w-25">
+        <h3 class="mb-1  mr-1">JavaScript</h3>
+        <p v-on:click='handleRouteTo2("javascript")'>Learn JavaScript</p>
+      </div>
     </div>
 
     <div class="navbarItems-group-items-2" v-if='navbarItemGroup2.isTrue'>
@@ -74,46 +83,6 @@
       </div>
 
     </div>
-
-    <div class="navvbarItems-group-items-1" v-else-if='navbarItemGroup1.items[1].isShowInfo'>
-      <div>
-        <h3>HTML</h3>
-        <p>HTML Tag Reference</p>
-        <p>HTML Brwser Support</p>
-        <p>HTML Evenet Reference</p>
-        <p>HTML Color Reference</p>
-        <p>HTML Attribute Reference</p>
-        <p>HTML Canvas Reference</p>
-        <p>HTML SVG</p>
-        <p>Google Maps Reference</p>
-      </div>
-
-      
-      <div>
-        <h3>CSS</h3>
-        <p>CSS Reference</p>
-        <p>CSS Browser Support</p>
-        <p>Bootstrap3 Reference</p>
-        <p>Bootstrap4 Reference</p>
-        <p>w6.CSS Reference</p>
-        <p>Icon Reference</p>
-        <p>Sass Reference</p>
-      </div>
-
-      <div>
-        <h3>JavaScript</h3>
-        <p>JavaScript Reference</p>
-        <p>HTML DOM Reference</p>
-        <p>jQuery Reference</p>
-        <p>w6 .JS Reference</p>
-      </div>
-
-
-
-    </div>
-
-    <div v-else=''></div>
-
   </div>
 </template>
 
@@ -153,7 +122,8 @@ const NavbarItems = Vue.extend({
   data() {
     return {
       state: {
-        navbarItemsClassStatus: 'navbarItems-group-items-2'
+        navbarItemsClassStatus: 'navbarItems-group-items-2',
+        isModel: false
       }
     }
   },
@@ -161,17 +131,11 @@ const NavbarItems = Vue.extend({
     navbarItemGroup1: {
       get() {
         return this.$store.getters[getter.getNavbarItemGroup1]
-      },
-      set() {
-
       }
     },
     navbarItemGroup2: {
       get() {
         return this.$store.getters[getter.getNavbarItemGroup2]
-      },
-      set() {
-
       }
     }
   },
@@ -186,6 +150,11 @@ const NavbarItems = Vue.extend({
         path: `/${valueObj.name.toLowerCase()}`
       })
     },
+    handleRouteTo2(urlPath: string) {
+      this.$router.push({
+        path: `/${urlPath}`
+      })
+    },
     handleScroll() {
       if (window.scrollY < 100) {
         // this.state.navbarItemsClassStatus = 'navbarItems-group-items-2'
@@ -194,6 +163,9 @@ const NavbarItems = Vue.extend({
         // this.handleRemoveScrollEffect()
       }
       return null
+    },
+    handleToggleModel() {
+      this.state.isModel = !this.state.isModel
     }
   }
 })
@@ -206,20 +178,18 @@ export default NavbarItems
   position: relative; 
 }
 
-/* .navbarItems-container-fixed {
+.navbarItems-container-fixed {
   position: fixed;
   left: 14rem;
   width: 100%;
   z-index: 1;
-} */
+}
 .navbarItems-group-items-1 {
   height: 60px;
   background-color: green;
   display: flex;
   justify-content: space-between;
 }
-
-
 
 .navbarItems-group-items-2 {
   height: 60px;
@@ -255,21 +225,15 @@ export default NavbarItems
   background-color: whitesmoke;
   color: black;
 }
-.navbarItems-group-items-1 > ul > li:hover {
-  cursor: not-allowed;
-}
 
 .navbarItems-group-items-2 > ul {
-  /* background-color: lightseagreen; */
   display: flex;
   flex-wrap: wrap;
-  /* width: 50%; */
   font-size: 24px;
   list-style: none;
   justify-content: space-around;
   align-items: center;
   color: whitesmoke;
-
 }
 
 .navbarItems-group-items-2 > ul > li {
@@ -288,6 +252,25 @@ export default NavbarItems
 
 .navbarItems-group-items-2 > ul > li:hover {
   background-color: black;
+}
+
+.navbarItemGroup1-model-container {
+  background-color: #f1f1f1;
+  height: 15rem;
+  width: 100%;
+  position: absolute;
+  top: 3.75rem;
+  display: flex;
+
+}
+
+.navbarItemGroup1-model-container > .container > p {
+  padding-top: 0.2rem;
+  padding-bottom: 0.2rem;
+}
+.navbarItemGroup1-model-container > .container > p:hover {
+  background-color: #5f5f5f;
+  cursor: pointer;
 }
 
 @media only screen and (max-device-width: 480px) {

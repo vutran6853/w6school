@@ -28,7 +28,6 @@ export default Navbar
 
 <style>
 #navbar-container {
-  /* height: 60px; */
   background-color: aliceblue;
 }
 
@@ -38,6 +37,13 @@ export default Navbar
   list-style: none;
   padding: 1rem;
   justify-content: space-between;
+}
+
+#navbar-container > ul > li:nth-child(1) {
+  cursor: pointer;
+}
+#navbar-container > ul > li:nth-child(1):hover {
+  color: #555;
 }
 
 

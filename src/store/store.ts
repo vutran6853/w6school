@@ -55,9 +55,9 @@ const state: IStoreState = {
     isTrue: true,
     items: [
       { id: 0, name: 'Tutorials', isHover: false, isShowInfo: false },
-      { id: 1, name: 'References', isHover: false, isShowInfo: false },
-      { id: 2, name: 'Examples', isHover: false, isShowInfo: false },
-      { id: 3, name: 'Exercises', isHover: false, isShowInfo: false }
+      // { id: 1, name: 'References', isHover: false, isShowInfo: false },
+      // { id: 2, name: 'Examples', isHover: false, isShowInfo: false },
+      // { id: 3, name: 'Exercises', isHover: false, isShowInfo: false }
     ]
   },
   navbarItemGroup2: {

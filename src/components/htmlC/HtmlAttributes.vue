@@ -393,7 +393,7 @@
       <div class="d-flex-column h-15">
         <p class="text-size-2">We Suggest: Always Use Lowercase Attributes</p>
         <p>The HTML standard does not require lowercase attribute names.</p>
-        <p>The title attribute (and all other attributes) can be written with uppercase or lowercase like <strong>title</strong> or </strong>TITLE</strong>.</p>
+        <p>The title attribute (and all other attributes) can be written with uppercase or lowercase like <strong>title</strong> or <strong>TITLE</strong>.</p>
         <p>However, W3C <strong>recommends</strong>lowercase attributes in HTML, and <strong>demands</strong>lowercase attributes for stricter document types like XHTML.</p>
 
       </div>

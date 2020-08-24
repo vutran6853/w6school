@@ -3,7 +3,6 @@
     <Navbar />
     <NavbarItems />
     <div class="main-container">
-
       <div class="main-side-left-container">
         <div class="main-side-items-container">
           <h3>HTML and CSS</h3>
@@ -22,7 +21,7 @@
 
         <div class="main-side-items-container">
           <h3>JavaScript</h3>
-          <p>Learn JavaScript</p>
+          <p class="available" v-on:click='handleRouteTo("/javascript")'>Learn JavaScript</p>
           <p>Learn jQuery</p>
           <p>Learn React</p>
           <p>Learn AngularJS</p>
@@ -107,8 +106,6 @@
                 <span class="tagcolor">></span>
               </div>
                   
-            
-
               <div>
                 <span class="tagcolor">&lt;</span>
                 <span class="color-red">h1</span>
@@ -141,11 +138,7 @@
                 <span class="color-red">/html</span>
                 <span class="tagcolor">></span>
               </div>
-
-    
-
             </div>
-
             <button class="w6-button disabled">Try it Yourself</button>
           </div>
         </section>
@@ -214,12 +207,8 @@
                 <span class="color-brown"> }</span>
                 
                 <br />
-
-
               </div>
-
             </div>
-
             <button class="w6-button disabled">Try it Yourself</button>
           </div>
         </section>
@@ -285,11 +274,8 @@
                 <span class="tagcolor">&lt;</span>
                 <span class="color-red">/script</span>
                 <span class="tagcolor">></span>
-
               </div>
-                  
             </div>
-
             <button class="w6-button disabled">Try it Yourself</button>
           </div>
         </section>
@@ -324,12 +310,7 @@
                 <br />
 
               </div>
-                  
-            
-
-
             </div>
-
             <button class="w6-button disabled" ref="Nom">Try it Yourself</button>
           </div>
         </section>
@@ -352,7 +333,6 @@ const Main = Vue.extend({
   },
   created() {
     this.$store.dispatch(action.setNavbarItemsToDefault)
-    this.$store.dispatch("getPosts")
   },
   mounted() {
     // console.log('window.innerHeight', window.innerHeight)

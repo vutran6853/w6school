@@ -25,8 +25,8 @@ export default {
     return {
       state: {
         appStyle: ''
-      } 
-    } 
+      }
+    }
   },
   created() {
     if (window.screen.width <= 414) {
@@ -36,7 +36,7 @@ export default {
     } else {
       this.state.appStyle = ''
     }
-  },
+  }
 }
 
 </script>
@@ -185,6 +185,9 @@ export default {
 }
 .mr-0-5 {
   margin-right: 0.5rem;
+}
+.mr-1 {
+  margin-right: 1rem;
 }
 
 .mb-1 {
