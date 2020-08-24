@@ -13,7 +13,7 @@ const CSSExample = Vue.extend({
             <span class="color-brown">{'{'}</span>
             <br />
 
-            <span class="color-red pl"> background-color: </span>
+            <span class="color-red pl-1"> background-color: </span>
             <span class="color-mediumblue">lightblue</span>
             <span class="color-black">;</span>
 
@@ -26,13 +26,13 @@ const CSSExample = Vue.extend({
             <span class="color-brown">{'{'}</span>
             <br />
 
-            <span class="color-red pl"> color: </span>
+            <span class="color-red pl-1"> color: </span>
             <span class="color-mediumblue"> lightblue</span>
             <span class="color-black">;</span>
 
             <br />
 
-            <span class="color-red pl"> text-align: </span>
+            <span class="color-red pl-1"> text-align: </span>
             <span class="color-mediumblue"> lightblue</span>
             <span class="color-black">;</span>
             <br />
@@ -44,12 +44,12 @@ const CSSExample = Vue.extend({
             <span class="color-brown">{'{'}</span>
             <br />
 
-            <span class="color-red pl"> font-family: </span>
+            <span class="color-red pl-1"> font-family: </span>
             <span class="color-mediumblue"> verdana</span>
             <span class="color-black">;</span>
             <br />
 
-            <span class="color-red pl">font-size: </span>
+            <span class="color-red pl-1">font-size: </span>
             <span class="color-mediumblue">20px</span>
             <span class="color-black">;</span>
 

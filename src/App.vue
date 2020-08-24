@@ -117,7 +117,12 @@ export default {
 .h-35 {
   height: 35rem;
 }
-
+.w-25 {
+  width: 25%;
+}
+.w-50 {
+  width: 50%;
+}
 .w-90 {
   width: 90%;
 }
@@ -166,15 +171,24 @@ export default {
   padding: 1rem;
 }
 
-.pl {
+.pl-1 {
   padding-left: 1rem;
 }
-
+.pl-2 {
+  padding-left: 2rem;
+}
+.pl-3 {
+  padding-left: 3rem;
+}
 .ml-1 {
   margin-left: 1rem;
 }
 .mr-0-5 {
   margin-right: 0.5rem;
+}
+
+.mb-1 {
+  margin-bottom: 1rem;
 }
 
 .border-black {

@@ -1,7 +1,7 @@
 <template>
   <section class="htmlIntroduction-main-container" style="border-left: 3px solid gainsboro;">
     <div class="htmlIntroduction-inner-item-a">
-      <p>CSS Introduction</p>
+      <p>JavaScript Introduction</p>
       <div class="group-button-container">
         <button class="w6-btn" v-on:click='handleRouteTo("/css")'>&lt;Previous</button>
         <button class="w6-btn disabled" v-on:click='handleRouteTo("/")'>Next ></button>  
@@ -9,61 +9,26 @@
     </div>
 
     <hr/>
+  
+    <div class="w6-info">
+      <p>This page contains some examples of what JavaScript can do.</p>
+    </div>
     
-    <!-- What is CSS? -->
+    <!-- JavaScript Can Change HTML Content -->
     <div class="htmlIntroduction-what-html-container">
-      <p class="text-size-2">What is CSS?</p>
-      <ul>
-        <li><strong>CSS</strong> stands for <strong>C</strong>ascading <strong>S</strong>tyle <strong>S</strong>heets</li>
-        <li>CSS describes how <strong>HTML elements are to be displayed on screen, paper, or in other media</strong></li>
-        <li>CSS <strong>saves a lot of work</strong>.It can control the layout of multiple web pages all at once</li>
-        <li>External stylesheets are stored in <strong>CSS files</strong></li>
-      </ul>
+      <p class="text-size-2">JavaScript Can Change HTML Content</p>
+      <p>One of many JavaScript HTML methods is <span class="w6-codespan">getElementById()</span>.</p>
+      <p>The example below "finds" an HTML element (with id="demo"), and changes the element content (innerHTML) to "Hello JavaScript":</p>
     </div>
 
     <hr/>
 
-    
-    <!-- Why Use CSS? -->
+    <!-- JavaScript Can Change HTML Attribute Values -->
     <div class="d-flex-column">
       <div class="d-flex-column h-6 w-100">
-        <p class="text-size-2">Why Use CSS?</p>
-        <p>CSS is used to define styles for your web pages, including the design, layout and variations in display for different devices and screen sizes.</p>
+        <p class="text-size-2">JavaScript Can Change HTML Attribute Values</p>
+        <p>In this example JavaScript changes the value of the <span class="w6-codespan">&lt;src&gt;</span> (source) attribute of an <span class="w6-codespan">&lt;img&gt;</span> tag:</p>
       </div>
-      <div class="w-100">
-        <CSSExample />
-      </div>
-    </div>
-
-    <hr/>
-
-    <!-- CSS Solved a Big Problem -->
-    <div class="d-flex-column h-25">
-      <p class="text-size-2">CSS Solved a Big Problem</p>
-      <p>HTML was NEVER intended to contain tags for formatting a web page!</p>
-      <p>HTML was created to <strong>describe the content</strong> of a web page, like:</p>
-      <p><span class="w6-codespan">&lt;h1&gt;</span>This is a heading<span class="w6-codespan">&lt;/h1&gt;</span></p>
-      <p><span class="w6-codespan">&lt;p&gt;</span>This is a paragraph.<span class="w6-codespan">&lt;/p&gt;</span></p>
-      <p>When tags like <span class="w6-codespan">&lt;font&gt;</span>, and color attributes were added to the HTML 3.2 specification, it started a nightmare for web developers. Development of large websites, where fonts and color information were added to every single page, became a long and expensive process.</p>
-      <p>To solve this problem, the World Wide Web Consortium (W3C) created CSS.</p>
-      <p>CSS removed the style formatting from the HTML page!</p>
-    </div>
-
-    <div class="note-container container">
-      <p>
-        <strong>Note:</strong>
-        If you don't know what HTML is, we suggest that you read our <router-link to="/html">HTML Tutorial.</router-link>
-      </p>
-    </div>
-
-    <hr/>
-
-
-    <!-- CSS Saves a Lot of Work! -->
-    <div class="d-flex-column h-8">
-      <p class="text-size-2">CSS Saves a Lot of Work!</p>
-      <p>The style definitions are normally saved in external .css files.</p>
-      <p>With an external stylesheet file, you can change the look of an entire website by changing just one file!</p>
     </div>
 
     <hr/>

@@ -282,7 +282,7 @@
           </div>
 
           <div>
-            <span class="pl">...</span>
+            <span class="pl-1">...</span>
           </div>
           
           <div>
@@ -330,7 +330,7 @@
           </div>
 
           <div>
-            <span class="pl">...</span>
+            <span class="pl-1">...</span>
           </div>
           
           <div>

@@ -1,30 +1,38 @@
 <template>
-  <section class="cssHome-central-container" style="border-left: 3px solid gainsboro;">
+  <section class="javascriptHome-central-container" style="border-left: 3px solid gainsboro;">
     <p>JavaScript Tutorial</p>
     <div class="group-button-container">
       <button class="w6-btn" v-on:click='handleRouteTo("/")'>&lt;Home</button>
       <button class="w6-btn" v-on:click='handleRouteTo("/javascript/introduction")'>Next ></button>  
     </div>
 
-    <div class="w6-info h-10">
+    <div class="w6-info h-13">
       <p>JavaScript is the world's most popular programming language.</p>
       <p>JavaScript is the programming language of the Web.</p>
       <p>JavaScript is easy to learn.</p>
       <p>This tutorial will teach you JavaScript from basic to advanced.</p>
-      <button class="disabled">Start Learning Javascript now >></button>
+      <button class="disabled">Start Learning Javascript >></button>
     </div>
 
     <hr/>
 
     <!-- Examples in Each Chapter" -->
-    <div class="cssHome-info-container">
+    <div class="javascriptHome-info-container">
       <div class="d-flex-column h-8">
         <p class="text-size-2">Examples in Each Chapter</p>
         <p>With our "Try it Yourself" editor, you can edit the source code and view the result.</p>
       </div>
-      
-      <h4 class="container">Click on the "Try it Yourself" button to see how it works.</h4>
-      <hr/>
+
+      <div class="code-example-container">
+        <p>Example</p>
+        <div class="code-example-javascript-container h-8">
+          <p class="text-size-2 mb-1">My First Javascript</p>
+          <button class="h-2 w-25 mb-1" v-on:click='handleDisplayDateAndTime'>Click me to display Date and Time</button>
+          <p class="mb-1" v-if='state.isDisplayDateAndTime'>{{ state.currentUserDate }}</p>
+        </div>
+        <!-- <button class="w6-button" v-on:click='handleRouteToTryIt'>Try it Yourself</button> -->
+        <button class="w6-button disabled">Try it Yourself</button>
+      </div>
     </div>
 
     <hr/>
@@ -40,10 +48,16 @@
     <hr/>
 
     <!-- CSS Templates -->
-    <div class="d-flex-column h-8">
+    <div class="d-flex-column h-15">
       <p class="text-size-2">Learn by Examples</p>
       <p>Examples are better than 1000 words. Examples are often easier to understand than text explanations.</p>
       <p>This tutorial supplements all explanations with clarifying "Try it Yourself" examples.</p>
+      <div class="note-container container">
+        <p>
+          <strong>Note:</strong>
+          If you try all the examples, you will learn a lot about JavaScript, in a very short time!
+        </p>
+      </div>
     </div>
 
     <div class="ad-placeholder">
@@ -53,15 +67,30 @@
     <hr/>
 
     <!-- Why Study JavaScript? -->
-    <div class="d-flex-column h-25">
+    <div class="d-flex-column h-12">
       <p class="text-size-2">Why Study JavaScript?</p>
       <p>JavaScript is one of the <strong>3 languages</strong> all web developers <strong>must</strong> learn:</p>
-      <!-- <router-link to="/html" v-on:click='handleRouteTo("/html")'>HTML</router-link> -->
-      <!-- <router-link to="/css">CSS</router-link> -->
-
+      <p>1. <strong>HTML</strong> to define the content of web pages</p>
+      <p>2. <strong>CSS</strong> to specify the layout of web pages</p>
+      <p>3. <strong>JavaScript</strong> to specify the layout of web pages</p>
     </div>
 
     <hr/>
+
+    <!-- Commonly Asked Questions -->
+    <div class="d-flex-column h-15">
+      <p class="text-size-2">Commonly Asked Questions</p>
+      <ul class="pl-3">
+        <li>How do I get JavaScript?</li>
+        <li>Where can I download JavaScript?</li>
+        <li>Is JavaScript Free?</li>
+      </ul>
+      <p><strong>You don't have to get or download JavaScript.</strong></p>
+      <p><strong>JavaScript is already running in your browser on your computer, on your tablet, and on your smart-phone.</strong></p>
+      <p><strong>JavaScript is free to use for everyone.</strong></p>
+    </div>
+
+    <hr />
 
     <div class="group-button-container container">
       <button class="w6-btn" v-on:click='handleRouteTo("/")'>&lt;Home</button>
@@ -76,6 +105,14 @@ import Vue from 'vue'
 
 const JavascriptHomeContent = Vue.extend({
   name: 'JavascriptHomeContent',
+  data() {
+    return {
+      state: {
+        isDisplayDateAndTime: false,
+        currentUserDate: ''
+      }
+    }
+  },
   // components: {
   //   CSSExample
   // },
@@ -84,6 +121,10 @@ const JavascriptHomeContent = Vue.extend({
       this.$router.push({
         path: urlPath
       })
+    },
+    handleDisplayDateAndTime() {
+      this.state.currentUserDate = new Date().toString()
+      this.state.isDisplayDateAndTime = true
     }
   }
 })
@@ -95,22 +136,29 @@ export default JavascriptHomeContent
 <style>
 /* @import url(../htmlC/shareStyle/shareStyle.css); */
 
-/* .cssHome-container {
+/* .javascriptHome-container {
   display: grid;
   grid-template-columns: 14rem 1fr 14rem;
   font-size: 1.1rem;
 } */
 
-.cssHome-central-container {
+.javascriptHome-central-container {
   display: flex;
   flex-direction: column;
   padding: 1rem;
 }
 
-.cssHome-central-container > p:nth-child(1) {
+.javascriptHome-central-container > p:nth-child(1) {
   margin-bottom: 1rem;
   margin-top: 1rem;
   font-size: 2.5rem;
+}
+
+.code-example-javascript-container {
+  background-color: white;
+  padding: 1rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
 }
 
 
@@ -126,11 +174,11 @@ export default JavascriptHomeContent
   outline: none;
 }
 
-/* .cssHome-container >* hr {
+/* .javascriptHome-container >* hr {
   border-top: 1px solid #eee;
 } */
 
-.cssHome-info-container {
+.javascriptHome-info-container {
   /* height: 3rem; */
   display: flex;
   flex-direction: column;
@@ -140,7 +188,7 @@ export default JavascriptHomeContent
   margin-top: 1rem;
 }
 
-/* .cssHome-section-example-item-right-container {
+/* .javascriptHome-section-example-item-right-container {
   background-color: #f1f1f1;
   height: 25rem;
   font-size: 1.5rem;
@@ -161,7 +209,7 @@ export default JavascriptHomeContent
   margin-top: 1rem;
 }
 
-.cssHome-info-exercisers-container {
+.javascriptHome-info-exercisers-container {
   height: 34rem;
   display: flex;
   flex-direction: column;
@@ -170,7 +218,7 @@ export default JavascriptHomeContent
   margin-top: 1rem;
 }
 
-.cssHome-info-exercises-inner-container {
+.javascriptHome-info-exercises-inner-container {
   background-color: #555555;
   height: 25rem;
   /* font-size: 1.5rem; */
@@ -181,7 +229,7 @@ export default JavascriptHomeContent
   color: white; 
 }
 
-.cssHome-info-exercises-inner-item-container {
+.javascriptHome-info-exercises-inner-item-container {
   background-color: white;
   color: black;
   height: 20rem;
@@ -192,7 +240,7 @@ export default JavascriptHomeContent
   padding: 1rem;
 }
 
-.cssHome-info-exercises-inner-item-container > .cssHome-info-exerciser-inner-item-a {
+.javascriptHome-info-exercises-inner-item-container > .javascriptHome-info-exerciser-inner-item-a {
   background-color: #f1f1f1;
   padding: 1rem;
   width: 97%;
@@ -217,7 +265,7 @@ export default JavascriptHomeContent
   width: 100%;
 }
 
-.cssHome-references-container {
+.javascriptHome-references-container {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -274,37 +322,37 @@ export default JavascriptHomeContent
 }
 
 @media only screen and (max-width: 480px) {
-  .cssHome-container {
+  .javascriptHome-container {
     display: grid;
     grid-template-columns: 1fr;
     font-size: 1.1rem;
   }
 
-  .cssHome-container > .sideLeft-container {
+  .javascriptHome-container > .sideLeft-container {
     display: none;
   }
 
-  .cssHome-container >* .cssHome-info-exercises-inner-item-container > .cssHome-info-exerciser-inner-item-a  {
+  .javascriptHome-container >* .javascriptHome-info-exercises-inner-item-container > .javascriptHome-info-exerciser-inner-item-a  {
     padding: 0px;
   }
 }
 
 @media(max-width: 768px) and (min-width: 480px) and (orientation: landscape) {
-  .cssHome-container {
+  .javascriptHome-container {
     display: grid;
     grid-template-columns: 14rem 1fr;
   }
-  .cssHome-container >* .cssHome-info-exercises-inner-item-container > .cssHome-info-exerciser-inner-item-a  {
+  .javascriptHome-container >* .javascriptHome-info-exercises-inner-item-container > .javascriptHome-info-exerciser-inner-item-a  {
     padding: 0px;
   }
 }
 
 /* @media (max-width: 768px) and (min-width: 481px) {
-  .cssHome-container {
+  .javascriptHome-container {
     display: grid;
     grid-template-columns: 14rem 1fr;
   }
-  .cssHome-container >* .cssHome-info-exercises-inner-item-container > .cssHome-info-exerciser-inner-item-a  {
+  .javascriptHome-container >* .javascriptHome-info-exercises-inner-item-container > .javascriptHome-info-exerciser-inner-item-a  {
     padding: 0px;
   }
 } */

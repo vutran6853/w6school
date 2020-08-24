@@ -9,6 +9,10 @@ const JavscriptHome = Vue.extend({
   name: 'JavscriptHome',
   created() {
     this.$store.dispatch('setNavbarItemsToJavascript')
+    if (window.innerHeight > 60) {
+      document.body.scrollTop = 0
+      document.documentElement.scrollTop = 0
+    }
   },
   updated() {
 

@@ -9,6 +9,10 @@ const Css = Vue.extend({
   name: 'Css',
   created() {
     this.$store.dispatch('setNavbarItemsToCSS')
+    if (window.innerHeight > 60) {
+      document.body.scrollTop = 0
+      document.documentElement.scrollTop = 0
+    }
   },
   updated() {
 
