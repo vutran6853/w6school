@@ -38,6 +38,7 @@ const action = {
   setNavbarItemsToHTML: 'setNavbarItemsToHTML',
   setNavbarItemsToCSS: 'setNavbarItemsToCSS',
   setNavbarItemsToJavascript: 'setNavbarItemsToJavascript',
+  setNavbarItemsToSQL: 'setNavbarItemsToSQL',
   setNavbarItemsBySelected: 'setNavbarItemsBySelected',
   setNavbarItemsToDefault: 'setNavbarItemsToDefault'
 }
@@ -46,6 +47,7 @@ const types = {
   SET_AT_HTML_VIEW: 'SET_AT_HTML_VIEW',
   SET_AT_CSS_VIEW: 'SET_AT_CSS_VIEW',
   SET_AT_JAVASCRIPT_VIEW: 'SET_AT_JAVASCRIPT_VIEW',
+  SET_AT_SQL_VIEW: 'SET_AT_SQL_VIEW',
   SET_AT_DEFAULT_VIEW: 'SET_AT_DEFAULT_VIEW',
   SET_NAVBAR_ITEMS_BY_SELECED: 'SET_NAVBAR_ITEMS_BY_SELECED'
 }
@@ -66,7 +68,7 @@ const state: IStoreState = {
       { id: 0, name: 'HTML', isHover: false, isShowInfo: false },
       { id: 1, name: 'CSS', isHover: false, isShowInfo: false },
       { id: 2, name: 'JAVASCRIPT', isHover: false, isShowInfo: false },
-      // { id: 3, name: 'SQL', isHover: false, isShowInfo: false },
+      { id: 3, name: 'SQL', isHover: false, isShowInfo: false },
       // { id: 4, name: 'PYTHON', isHover: false, isShowInfo: false },
       // { id: 5, name: 'MORE', isHover: false, isShowInfo: false }
     ]
@@ -97,6 +99,9 @@ const actions: ActionTree<IStoreState, any> = {
   },
   setNavbarItemsToJavascript() {
     this.commit(types.SET_AT_JAVASCRIPT_VIEW)
+  },
+  setNavbarItemsToSQL() {
+    this.commit(types.SET_AT_SQL_VIEW)
   }
 }
 
@@ -115,6 +120,11 @@ const mutations: MutationTree<IStoreState> = {
     state.navbarItemGroup1.isTrue = false
     state.navbarItemGroup2.isTrue = true
     state.navbarItemGroup2.items[2].isHover = true
+  },
+  [types.SET_AT_SQL_VIEW](state) {
+    state.navbarItemGroup1.isTrue = false
+    state.navbarItemGroup2.isTrue = true
+    state.navbarItemGroup2.items[3].isHover = true
   },
   [types.SET_AT_DEFAULT_VIEW](state) {
     state.navbarItemGroup1.isTrue = true

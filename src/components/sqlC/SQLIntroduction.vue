@@ -47,19 +47,24 @@
 
 <script lang="ts">
 import Vue from 'vue'
+import CSSExample from './shareUI/CSSExample'
 
-const CssIntroduction = Vue.extend({
-  name: 'CssIntroduction',
+const SQLIntroduction = Vue.extend({
+  name: 'SQLIntroduction',
   data: function () {
     return {
       state: {
       }
     }
   },
+  components: {
+    CSSExample
+  },
+
   methods: {
     // handleRouteToTryIt() {
     //   this.$router.push({
-    //     path: '/html/tryit/CssIntroduction'
+    //     path: '/html/tryit/SQLIntroduction'
     //   })
     // },
     handleRouteTo(urlPath: string) {
@@ -70,7 +75,7 @@ const CssIntroduction = Vue.extend({
   }
 })
 
-export default CssIntroduction
+export default SQLIntroduction
 
 </script>
 

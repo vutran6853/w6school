@@ -286,8 +286,9 @@
             <h3>SQL</h3>
             <p>A language for accessing databases</p>
             <div class="code-section-example-item-left-group-button">
-              <button class="w6-button-grey disabled">LEARN SQL</button>
-              <button class="w6-button-grey disabled">SQL REFERENCE</button>  
+              <!-- <button class="w6-button-grey disabled">LEARN SQL</button> -->
+              <button class="w6-button-grey" v-on:click='handleRouteTo("sql")'>LEARN SQL</button>
+              <!-- <button class="w6-button-grey disabled">SQL REFERENCE</button>   -->
             </div>
           </div>
 

@@ -265,8 +265,8 @@ export default NavbarItems
 }
 
 .navbarItemGroup1-model-container > .container > p {
-  padding-top: 0.2rem;
-  padding-bottom: 0.2rem;
+  padding-top: 0.3rem;
+  padding-bottom: 0.3rem;
 }
 .navbarItemGroup1-model-container > .container > p:hover {
   background-color: #5f5f5f;

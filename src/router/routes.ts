@@ -18,6 +18,9 @@ import JavascriptHome from '../components/javascriptC/JavascriptHome'
 import JavascriptHomeContent from '../components/javascriptC/JavascriptHomeContent.vue'
 import JavascriptIntroduction from '../components/javascriptC/JavascriptIntroduction.vue'
 
+import SQLHome from '../components/sqlC/SQLHome'
+import SQLHomeContent from '../components/sqlC/SQLHomeContent.vue'
+import SQLIntroduction from '../components/sqlC/SQLIntroduction.vue'
 
 Vue.use(VueRouter)
 
@@ -56,6 +59,15 @@ Vue.use(VueRouter)
     children: [
       { path: '/javascript', component: JavascriptHomeContent },
       { path: '/javascript/introduction', component: JavascriptIntroduction }
+    ]
+  },
+  {
+    path: '/sql',
+    name: 'SQL',
+    component: SQLHome, 
+    children: [
+      { path: '/sql', component: SQLHomeContent },
+      { path: '/sql/introduction', component: SQLIntroduction }
     ]
   },
   {
