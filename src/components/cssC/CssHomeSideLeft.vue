@@ -81,7 +81,6 @@ const CssHomeSideLeft = Vue.extend({
     }
   },
   created() {
-    console.log(this.$route.path)
     this.state.groupItem1.map((value) => {
       if (value.path === this.$route.path) {
         value.isActive = true

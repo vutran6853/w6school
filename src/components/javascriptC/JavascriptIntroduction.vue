@@ -50,18 +50,7 @@ import Vue from 'vue'
 
 const CssIntroduction = Vue.extend({
   name: 'CssIntroduction',
-  data: function () {
-    return {
-      state: {
-      }
-    }
-  },
   methods: {
-    // handleRouteToTryIt() {
-    //   this.$router.push({
-    //     path: '/html/tryit/CssIntroduction'
-    //   })
-    // },
     handleRouteTo(urlPath: string) {
       this.$router.push({
         path: urlPath

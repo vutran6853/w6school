@@ -89,7 +89,6 @@ const JavasciptHomeSideLeft = Vue.extend({
   },
   methods: {
     handleRouteTo(passURL: string) {
-      console.log('object')
       this.$router.push({
         path: passURL
       })

@@ -272,13 +272,6 @@ import DocumentsUI from './shareUI/DocumentsUI.vue'
 
 const HtmlBasic = Vue.extend({
   name: 'HtmlBasic',
-  data: function () {
-    return {
-      state: {
-       
-      }
-    }
-  },
   components: {
     DocumentsUI
   },
@@ -287,13 +280,6 @@ const HtmlBasic = Vue.extend({
       this.$router.push({
         path: urlPath
       })
-    }
-  },
-  watch: {
-    $route(to, from) {
-      // react to route changes...
-      console.log({to, from})
-      
     }
   }
 })

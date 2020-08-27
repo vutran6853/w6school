@@ -362,13 +362,6 @@ import DocumentsUI from './shareUI/DocumentsUI.vue'
 
 const HtmlBasic = Vue.extend({
   name: 'HtmlBasic',
-  data: function () {
-    return {
-      state: {
-       
-      }
-    }
-  },
   components: {
     ElementUI,
     DocumentsUI

@@ -101,7 +101,6 @@
 
 <script lang="ts">
 import Vue from 'vue'
-// import CSSExample from './shareUI/CSSExample'
 
 const JavascriptHomeContent = Vue.extend({
   name: 'JavascriptHomeContent',
@@ -113,9 +112,6 @@ const JavascriptHomeContent = Vue.extend({
       }
     }
   },
-  // components: {
-  //   CSSExample
-  // },
   methods: {
     handleRouteTo(urlPath: string) {
       this.$router.push({

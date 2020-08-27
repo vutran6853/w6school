@@ -3,7 +3,7 @@
     <p>SQL Tutorial</p>
     <div class="group-button-container">
       <button class="w6-btn" v-on:click='handleRouteTo("/")'>&lt;Home</button>
-      <button class="w6-btn" v-on:click='handleRouteTo("/javascript/introduction")'>Next ></button>  
+      <button class="w6-btn" v-on:click='handleRouteTo("/sql/introduction")'>Next ></button>  
     </div>
 
     <div class="w6-info h-10">
@@ -21,12 +21,15 @@
         <p>With our online SQL editor, you can edit the SQL statements, and click on a button to view the result.</p>
       </div>
 
-      <div class="code-example-container">
+    <div class="code-example-container h-8">
         <p>Example</p>
-        <div class="code-example-javascript-container h-8">
-          <p class="text-size-2 mb-1">My First Javascript</p>
-          <button class="h-2 w-25 mb-1" v-on:click='handleDisplayDateAndTime'>Click me to display Date and Time</button>
-          <p class="mb-1" v-if='state.isDisplayDateAndTime'>{{ state.currentUserDate }}</p>
+        <div class="code-example-inner-container h-2">
+          <div class="code-example-inner-mini-container h-2">
+            <span class="color-mediumblue mr-0-5">SELECT</span>
+            <span class="color-black mr-0-5">*</span>
+            <span class="color-mediumblue mr-0-5">FROM</span>
+            <span class="color-black">Customers;</span>
+          </div>
         </div>
         <!-- <button class="w6-button" v-on:click='handleRouteToTryIt'>Try it Yourself</button> -->
         <button class="w6-button disabled">Try it Yourself</button>
@@ -43,7 +46,7 @@
 
     <div class="group-button-container container">
       <button class="w6-btn" v-on:click='handleRouteTo("/")'>&lt;Home</button>
-      <button class="w6-btn" v-on:click='handleRouteTo("/javascript/introduction")'>Next ></button>  
+      <button class="w6-btn" v-on:click='handleRouteTo("/sql/introduction")'>Next ></button>  
     </div>
   </section>
 </template>

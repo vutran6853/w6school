@@ -86,12 +86,6 @@ import CSSExample from './shareUI/CSSExample'
 
 const CssIntroduction = Vue.extend({
   name: 'CssIntroduction',
-  data: function () {
-    return {
-      state: {
-      }
-    }
-  },
   components: {
     CSSExample
   },

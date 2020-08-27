@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <main>
     <Navbar />
     <NavbarItems />
     <div class="main-container">
@@ -8,55 +8,56 @@
           <h3>HTML and CSS</h3>
           <p class="available" v-on:click='handleRouteTo("/html")'>Learn HTML</p>
           <p class="available" v-on:click='handleRouteTo("/css")'>Learn CSS</p>
-          <p>Learn Bootstrap</p>
-          <p>Learn w6.CSS</p>
-          <p>Learn Colors</p>
-          <p>Learn Icons</p>
-          <p>Learn Graphices</p>
-          <p>Learn SVG</p>
-          <p>Learn Canvas</p>
-          <p>Learn How To</p>
-          <p>Learn Sass</p>
+          <!-- <p>Learn Bootstrap</p> -->
+          <!-- <p>Learn w6.CSS</p> -->
+          <!-- <p>Learn Colors</p> -->
+          <!-- <p>Learn Icons</p> -->
+          <!-- <p>Learn Graphices</p> -->
+          <!-- <p>Learn SVG</p> -->
+          <!-- <p>Learn Canvas</p> -->
+          <!-- <p>Learn How To</p> -->
+          <!-- <p>Learn Sass</p> -->
         </div>
 
         <div class="main-side-items-container">
           <h3>JavaScript</h3>
           <p class="available" v-on:click='handleRouteTo("/javascript")'>Learn JavaScript</p>
-          <p>Learn jQuery</p>
-          <p>Learn React</p>
-          <p>Learn AngularJS</p>
-          <p>Learn JSON</p>
-          <p>Learn AJAX</p>
-          <p>Learn w6.JS</p>
+          <!-- <p>Learn jQuery</p> -->
+          <!-- <p>Learn React</p> -->
+          <!-- <p>Learn AngularJS</p> -->
+          <!-- <p>Learn JSON</p> -->
+          <!-- <p>Learn AJAX</p> -->
+          <!-- <p>Learn w6.JS</p> -->
         </div>
 
 
         <div class="main-side-items-container">
           <h3>Server Side</h3>
-          <p>Learn SQL</p>
-          <p>Learn PHP</p>
-          <p>Learn ASP</p>
-          <p>Learn Node.js</p>
-          <p>Learn Raspberry Pi</p>
+          <!-- <p>Learn SQL</p> -->
+          <p class="available" v-on:click='handleRouteTo("/sql")'>Learn SQL</p>
+          <!-- <p>Learn PHP</p> -->
+          <!-- <p>Learn ASP</p> -->
+          <!-- <p>Learn Node.js</p> -->
+          <!-- <p>Learn Raspberry Pi</p> -->
         </div>
 
 
         <div class="main-side-items-container">
           <h3>Programming</h3>
           <p>Learn Python</p>
-          <p>Learn Java</p>
-          <p>Learn C++</p>
-          <p>Learn C#</p>
-          <p>Learn Machine Learning</p>
+          <!-- <p>Learn Java</p> -->
+          <!-- <p>Learn C++</p> -->
+          <!-- <p>Learn C#</p> -->
+          <!-- <p>Learn Machine Learning</p> -->
         </div>
 
         <div class="main-side-items-container">
           <h3>Web Building</h3>
           <p>Web Templates</p>
-          <p>Web Statistice</p>
-          <p>Web Certificates</p>
-          <p>Web Editor</p>
-          <p>Web Development</p>
+          <!-- <p>Web Statistice</p> -->
+          <!-- <p>Web Certificates</p> -->
+          <!-- <p>Web Editor</p> -->
+          <!-- <p>Web Development</p> -->
         </div>
 
       </div> 
@@ -315,9 +316,13 @@
             <button class="w6-button disabled" ref="Nom">Try it Yourself</button>
           </div>
         </section>
+        <footer class="p-1 h-5" style="background-color: #616161;">
+          <button class="w6-button mr-1">FORUM</button>
+          <button class="w6-button">ABOUT</button>
+        </footer>
       </div>
     </div>
-  </div>
+  </main>
 </template>
 
 <script lang="ts">

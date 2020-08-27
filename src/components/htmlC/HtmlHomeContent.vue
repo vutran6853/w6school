@@ -202,16 +202,6 @@ import Vue from 'vue'
 
 const HtmlHomeContent = Vue.extend({
   name: 'HtmlHomeContent',
-  data: function () {
-    return {
-      state: {
-       
-      }
-    }
-  },
-  created() {
-    
-  },
   methods: {
     handleRouteTo(urlPath: string) {
       this.$router.push({

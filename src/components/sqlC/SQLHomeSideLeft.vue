@@ -51,33 +51,16 @@ const SQLHomeSideLeft = Vue.extend({
     return {
       state: {
         groupItem1: [
-          { id: 0, text: 'SQL HOME', path: '/javascript', isActive: false },
-          { id: 1, text: 'SQL Introduction', path: '/javascript/introduction', isActive: false },
+          { id: 0, text: 'SQL HOME', path: '/sql', isActive: false },
+          { id: 1, text: 'SQL Introduction', path: '/sql/introduction', isActive: false },
           // { id: 2, text: 'SQL Editors', path: '/html/editors', isActive: false },
-          // { id: 3, text: 'SQL Basic', path: '/javascript/basic', isActive: false },
-          // { id: 4, text: 'SQL Elements', path: '/javascript/elements', isActive: false },
-          // { id: 5, text: 'SQL Attributes', path: '/javascript/attributes', isActive: false },
-          // { id: 6, text: 'SQL Headings', path: '/javascript/headings', isActive: false },
-          // { id: 7, text: 'SQL Paragraphs', path: '/javascript/paragraphs', isActive: false },
-          // { id: 8, text: 'SQL Styles', path: '/javascript/styles', isActive: false },
-          // { id: 9, text: 'SQL Formatting', path: '/javascript/formatting', isActive: false },
-          // { id: 10, text: 'SQL Quotation', path: '/javascript/quotation', isActive: false },
-          // { id: 11, text: 'SQL Comments', path: '/javascript/comments', isActive: false },
-          // { id: 12, text: 'SQL Colors', path: '/javascript/colors', isActive: false },
-          // { id: 13, text: 'SQL javascript', path: '/javascript/javascript', isActive: false },
-          // { id: 14, text: 'SQL Links', path: '/javascript/links', isActive: false },
-          // { id: 15, text: 'SQL Images', path: '/javascript/images', isActive: false },
-          // { id: 16, text: 'SQL Tables', path: '/javascript/tables', isActive: false },
-          // { id: 17, text: 'SQL Lists', path: '/javascript/lists', isActive: false },
-          // { id: 18, text: 'SQL Block', path: '/javascript/block', isActive: false },
-          // { id: 19, text: 'SQL Tables', path: '/javascript/tables', isActive: false },
-          // { id: 20, text: 'SQL Classes', path: '/javascript/classes', isActive: false }
+          // { id: 3, text: 'SQL Basic', path: '/sql/basic', isActive: false },
+          // { id: 4, text: 'SQL Elements', path: '/sql/elements', isActive: false },
         ]
       }
     }
   },
   created() {
-    console.log(this.$route.path)
     this.state.groupItem1.map((value) => {
       if (value.path === this.$route.path) {
         value.isActive = true

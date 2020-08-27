@@ -272,12 +272,6 @@ import ElementUI from './shareUI/ElementUI.vue'
 
 const HtmlIntroduction = Vue.extend({
   name: 'HtmlIntroduction',
-  data: function () {
-    return {
-      state: {
-      }
-    }
-  },
   components: {
     ElementUI
   },
