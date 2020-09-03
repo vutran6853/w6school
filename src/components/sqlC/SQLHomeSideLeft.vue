@@ -52,7 +52,7 @@ const SQLHomeSideLeft = Vue.extend({
       state: {
         groupItem1: [
           { id: 0, text: 'SQL HOME', path: '/sql', isActive: false },
-          { id: 1, text: 'SQL Introduction', path: '/sql/introduction', isActive: false },
+          // { id: 1, text: 'SQL Introduction', path: '/sql/introduction', isActive: false },
           // { id: 2, text: 'SQL Editors', path: '/html/editors', isActive: false },
           // { id: 3, text: 'SQL Basic', path: '/sql/basic', isActive: false },
           // { id: 4, text: 'SQL Elements', path: '/sql/elements', isActive: false },

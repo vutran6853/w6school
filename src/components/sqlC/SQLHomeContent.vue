@@ -3,7 +3,7 @@
     <p>SQL Tutorial</p>
     <div class="group-button-container">
       <button class="w6-btn" v-on:click='handleRouteTo("/")'>&lt;Home</button>
-      <button class="w6-btn" v-on:click='handleRouteTo("/sql/introduction")'>Next ></button>  
+      <button class="w6-btn" v-on:click='handleRouteTo("/")'>Next ></button>  
     </div>
 
     <div class="w6-info h-10">
@@ -46,7 +46,7 @@
 
     <div class="group-button-container container">
       <button class="w6-btn" v-on:click='handleRouteTo("/")'>&lt;Home</button>
-      <button class="w6-btn" v-on:click='handleRouteTo("/sql/introduction")'>Next ></button>  
+      <button class="w6-btn" v-on:click='handleRouteTo("/")'>Next ></button>  
     </div>
   </section>
 </template>
